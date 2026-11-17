@@ -1,0 +1,34 @@
+/* 윈터캠프 랜딩(/winter/1, /winter/2) 전용. 모든 규칙은 .wc 안으로 한정해 기존 페이지(/)에 영향이 없습니다. */
+.wc a{color:#FFFFFF}
+.wc a:hover{color:#FFF3A8}
+.wc details summary{cursor:pointer;list-style:none}
+.wc details summary::-webkit-details-marker{display:none}
+
+@keyframes wc-fall1{0%{transform:translate3d(0,-40px,0)}100%{transform:translate3d(36px,1100px,0)}}
+@keyframes wc-fall2{0%{transform:translate3d(0,-40px,0)}100%{transform:translate3d(-30px,1100px,0)}}
+@keyframes wc-twinkle{0%,100%{opacity:.2}50%{opacity:1}}
+@keyframes wc-floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes wc-burst{0%,100%{transform:scale(.92);opacity:.75}50%{transform:scale(1.06);opacity:1}}
+
+.wc .flake{position:absolute;border-radius:50%;background:#FFFFFF;animation-timing-function:linear;animation-iteration-count:infinite}
+.wc-c1 .flake{animation-name:wc-fall1}
+.wc-c2 .flake{animation-name:wc-fall2}
+.wc .tw{position:absolute;border-radius:50%;background:#FFFFFF;animation:wc-twinkle 3s ease-in-out infinite}
+.wc-c2 .tw{animation-duration:2.6s}
+.wc .globe{animation:wc-floaty 6s ease-in-out infinite}
+.wc .fw{transform-box:fill-box;transform-origin:center;animation:wc-burst 2.4s ease-in-out infinite}
+
+.wc .ex-d{text-shadow:2px 2px 0 #7A6CFF,4px 4px 0 #6D5EF7,6px 6px 0 #6050EC,8px 8px 0 #5342DF,10px 10px 0 #4635D0,12px 12px 0 #3A29BF,14px 14px 0 #2F1FAC,16px 16px 0 #251697,20px 24px 30px rgba(3,2,30,.65)}
+.wc .ex-y{text-shadow:2px 2px 0 #B9B0FF,4px 4px 0 #9D92FF,6px 6px 0 #8274F5,8px 8px 0 #6A5AE6,10px 10px 0 #5543D2,14px 18px 24px rgba(3,2,30,.6)}
+.wc .ex-g{text-shadow:0 2px 0 #DCE2FF,0 4px 0 #C3CCFF,0 6px 0 #A8B3FF,0 8px 0 #8C98F7,0 10px 0 #707CE8,0 12px 0 #5662D6,0 14px 0 #3F49BF,0 26px 34px rgba(2,2,40,.7),0 0 36px rgba(160,180,255,.55)}
+
+@media (max-width:900px){.wc .qb{display:none !important}}
+@media (max-width:640px){
+  .wc .wc-sec{padding-top:80px !important;padding-bottom:80px !important}
+  .wc .wc-ribbon{width:120px !important;height:84px !important;padding-bottom:12px !important}
+  .wc .wc-ribbon span:first-child{font-size:12px !important}
+  .wc .wc-ribbon span:last-child{font-size:17px !important}
+  .wc .wc-hide-sm{display:none !important}
+  .wc .wc-nav a{font-size:16px !important;min-height:64px !important}
+}
+@media (prefers-reduced-motion:reduce){.wc .flake,.wc .tw,.wc .globe,.wc .fw{animation:none}}
