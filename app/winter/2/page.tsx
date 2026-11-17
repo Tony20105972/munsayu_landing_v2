@@ -1,11 +1,17 @@
 import type { Metadata } from 'next';
+import { social } from '../../og';
 import CampBody from '../CampBody';
 import KakaoIcon from '../KakaoIcon';
 import SectionNav from '../SectionNav';
 import { sky } from '../sky';
 
+const TITLE = '문해와 사유 | 2027 윈터캠프 — 초5·6 문해·사유 집중 과정';
+const DESCRIPTION = '읽고 쓰고 고쳐 쓰는 4주. 초5·6 · 대치본원 / 분당 수내점 · 2027. 1. 5. ~ 1. 29. · 화~금 09:00~13:00 · 반당 10명 이하';
+
 export const metadata: Metadata = {
-  title: '문해와 사유 | 2027 윈터캠프 — 초5·6 문해·사유 집중 과정',
+  title: TITLE,
+  description: DESCRIPTION,
+  ...social(TITLE, DESCRIPTION),
 };
 
 // 시안 C2 — 3D 계단
