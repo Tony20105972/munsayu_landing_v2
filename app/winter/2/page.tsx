@@ -35,8 +35,8 @@ export default function Page() {
         </header>
         <div style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '40px 24px 72px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '24px'}}>
           <div style={{flex: '999 1 600px', minWidth: '0', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: '1'}}>
-            <span style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(26px, 3.2vw, 46px)', lineHeight: '1.3', background: 'linear-gradient(90deg, #6EA6FF, #B7D0FF)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent'}}>한 계단씩 오르는 겨울, 쌓이는 문해력!</span>
-            <span style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(26px, 3.2vw, 46px)', lineHeight: '1.3', background: 'linear-gradient(90deg, #6EA6FF, #B7D0FF)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent'}}>읽고 쓰고 고쳐 쓰는 4주의 완성</span>
+            <span style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(26px, 3.2vw, 46px)', lineHeight: '1.3', background: 'linear-gradient(90deg, #6EA6FF, #B7D0FF)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent'}}>읽고 생각하고, 자기 말로 표현하는 겨울</span>
+            <span style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(26px, 3.2vw, 46px)', lineHeight: '1.3', background: 'linear-gradient(90deg, #6EA6FF, #B7D0FF)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent'}}>읽은 것을 쓰고, 쓴 것을 다시 다듬는 시간</span>
             <span className="ex-g" style={{marginTop: '28px', fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(76px, 10vw, 150px)', lineHeight: '1', letterSpacing: '2px'}}>2027</span>
             <span className="ex-g" style={{marginTop: '6px', fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(92px, 13.5vw, 200px)', lineHeight: '1.02', letterSpacing: '-6px'}}>윈터캠프</span>
             <dl style={{margin: '40px 0 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px 24px', fontSize: '20px', maxWidth: '840px'}}>

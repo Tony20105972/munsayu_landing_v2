@@ -56,23 +56,23 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
       <section className="wc-sec" style={{padding: '140px 24px 120px'}}>
         <div style={{maxWidth: '1120px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '64px'}}>
           <div style={{textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '14px'}}>
-            <p style={{margin: '0', fontSize: 'clamp(22px, 2.6vw, 38px)', fontWeight: '300', lineHeight: '1.4'}}>방학이 끝나면 무엇이 남았나요?</p>
-            <h2 style={{margin: '0', fontSize: 'clamp(34px, 4.6vw, 64px)', fontWeight: '900', lineHeight: '1.25', letterSpacing: '-1.5px', color: t.title}}>이런 장면, 집에서 본 적 있으신가요</h2>
+            <p style={{margin: '0', fontSize: 'clamp(22px, 2.6vw, 38px)', fontWeight: '300', lineHeight: '1.4'}}>방학이 끝난 뒤, 아이에게 무엇이 남을까요?</p>
+            <h2 style={{margin: '0', fontSize: 'clamp(34px, 4.6vw, 64px)', fontWeight: '900', lineHeight: '1.25', letterSpacing: '-1.5px', color: t.title}}>집에서 이런 모습을 보신 적 있으신가요?</h2>
           </div>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px'}}>
-            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>01</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>책은 다 읽었는데, 무슨 내용이었는지 말하지 못한다</p></div>
-            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>02</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>쓰라고 하면 세 줄에서 멈춘다</p></div>
-            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>03</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>문법 용어가 나오면 국어가 갑자기 낯설어진다</p></div>
+            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>01</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>책을 읽었지만, 자기 말로 설명하기는 어렵다</p></div>
+            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>02</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>글을 시작해도 생각을 끝까지 이어 가지 못한다</p></div>
+            <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '36px', display: 'flex', flexDirection: 'column', gap: '16px'}}><span style={{fontSize: '15px', fontWeight: '900', color: t.title}}>03</span><p style={{margin: '0', fontSize: '21px', lineHeight: '1.6', fontWeight: '700'}}>낯선 문장을 만나면 국어가 멀게 느껴진다</p></div>
           </div>
-          <p style={{margin: '0', textAlign: 'center', fontSize: '19px', lineHeight: '1.75', color: t.muted}}>읽기와 쓰기는 따로 떨어진 기술이 아닙니다. 4주 동안 읽은 것을 글로 옮기고, 첨삭받아 고쳐 쓰며 연결합니다.</p>
+          <p style={{margin: '0', textAlign: 'center', fontSize: '19px', lineHeight: '1.75', color: t.muted}}>읽기와 쓰기는 이어져 있습니다. 읽은 내용을 글로 옮기고, 피드백을 받아 다시 쓰며 생각을 자기 것으로 만듭니다.</p>
         </div>
       </section>
 
       <section className="wc-sec" id="outcome" style={{padding: '120px 24px', borderTop: '1px solid rgba(255,255,255,0.08)'}}>
         <div style={{maxWidth: '1120px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '64px'}}>
           <div style={{textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '14px'}}>
-            <p style={{margin: '0', fontSize: 'clamp(22px, 2.6vw, 38px)', fontWeight: '300', lineHeight: '1.4'}}>듣고 끝나는 수업이 아니라, 손으로 남기는 수업입니다.</p>
-            <h2 style={{margin: '0', fontSize: 'clamp(34px, 4.6vw, 64px)', fontWeight: '900', lineHeight: '1.25', letterSpacing: '-1.5px', color: t.title}}>4주 동안 아이가 직접 만들어 내는 것들</h2>
+            <p style={{margin: '0', fontSize: 'clamp(22px, 2.6vw, 38px)', fontWeight: '300', lineHeight: '1.4'}}>듣고 지나가는 수업이 아니라, 직접 써서 남기는 수업입니다.</p>
+            <h2 style={{margin: '0', fontSize: 'clamp(34px, 4.6vw, 64px)', fontWeight: '900', lineHeight: '1.25', letterSpacing: '-1.5px', color: t.title}}>아이 손으로 완성해 가는 결과물</h2>
           </div>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px'}}>
             <div style={{background: t.card, border: '1px solid rgba(255,255,255,0.12)', borderRadius: '20px', padding: '28px', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'center', textAlign: 'center'}}>
@@ -262,8 +262,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
           <div style={{flex: '999 1 480px', minWidth: '0', display: 'flex', flexDirection: 'column', gap: '22px'}}>
             <p style={{margin: '0', fontSize: 'clamp(20px, 2.2vw, 30px)', fontWeight: '300', lineHeight: '1.4'}}>매주 금요일, 원장 특강</p>
             <h2 style={{margin: '0', fontSize: 'clamp(32px, 4vw, 54px)', fontWeight: '900', lineHeight: '1.3', letterSpacing: '-1.2px', color: t.title}}>원장이 직접<br />읽고 쓰는 법을 가르칩니다</h2>
-            <p style={{margin: '0', fontSize: '19px', lineHeight: '1.8'}}>“잘 쓴 글은 잘 읽은 데서 나옵니다. 지문의 논지를 정확히 잡는 순간, 쓸 말이 생깁니다.”</p>
-            <span style={{fontSize: '14px', color: t.muted}}>[원장 인용 — 실제 문장으로 교체]</span>
+            <p style={{margin: '0', fontSize: '19px', lineHeight: '1.8'}}>“문해로 읽고 사유로 쓰는 법을, 이번 겨울 4주 동안 제가 직접 함께 가르치겠습니다.”</p>
             <div style={{display: 'flex', flexDirection: 'column', gap: '12px', paddingTop: '22px', borderTop: '1px solid rgba(255,255,255,0.16)'}}>
               <b style={{fontSize: '17px'}}>연세대학교 행정학과 졸업 <span style={{fontSize: '14px', fontWeight: '400', color: t.muted}}>(논술특기자 입학)</span></b>
               <ul style={{margin: '0', padding: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '16px', lineHeight: '1.5'}}><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: t.accent, color: '#FFFFFF'}}>현</span><span>문해와 사유 대치·분당학원 원장</span></li><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: t.accent, color: '#FFFFFF'}}>현</span><span>시대인재 단과·재종 인문논술 강사</span></li><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: t.accent, color: '#FFFFFF'}}>현</span><span>카이로스논구술 인문논술 대표강사</span></li><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: t.accent, color: '#FFFFFF'}}>현</span><span>논술런(인강), 김윤환입시컨설팅 대표</span></li><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: 'rgba(255,255,255,0.14)', color: t.muted}}>전</span><span>논단기·스카이에듀 논구술 강사</span></li><li style={{display: 'flex', gap: '12px', alignItems: 'baseline'}}><span style={{flex: 'none', fontSize: '12px', fontWeight: '900', borderRadius: '5px', padding: '2px 7px', background: 'rgba(255,255,255,0.14)', color: t.muted}}>전</span><span>아토즈논구술아카데미 원장</span></li></ul>
