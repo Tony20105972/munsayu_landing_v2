@@ -18,8 +18,8 @@
 .wc .globe{animation:wc-floaty 6s ease-in-out infinite}
 .wc .fw{transform-box:fill-box;transform-origin:center;animation:wc-burst 2.4s ease-in-out infinite}
 
-.wc .ex-d{text-shadow:2px 2px 0 #7A6CFF,4px 4px 0 #6D5EF7,6px 6px 0 #6050EC,8px 8px 0 #5342DF,10px 10px 0 #4635D0,12px 12px 0 #3A29BF,14px 14px 0 #2F1FAC,16px 16px 0 #251697,20px 24px 30px rgba(3,2,30,.65)}
-.wc .ex-y{text-shadow:2px 2px 0 #B9B0FF,4px 4px 0 #9D92FF,6px 6px 0 #8274F5,8px 8px 0 #6A5AE6,10px 10px 0 #5543D2,14px 18px 24px rgba(3,2,30,.6)}
+.wc .ex-d{text-shadow:0 1px 0 #DCD7FF,0 2px 0 #CBC4FC,0 3px 0 #B9B0F6,0 4px 0 #A79DEE,0 5px 0 #958AE4,0 6px 0 #8377D8,0 7px 0 #7165CB,0 8px 0 #6155BD,0 16px 22px rgba(8,5,50,.42),0 34px 56px rgba(8,5,50,.32)}
+.wc .ex-y{text-shadow:0 1px 0 #D3CDFC,0 2px 0 #BEB6F6,0 3px 0 #A99FEE,0 4px 0 #9489E3,0 5px 0 #8074D6,0 12px 18px rgba(8,5,50,.4)}
 .wc .ex-g{text-shadow:0 2px 0 #DCE2FF,0 4px 0 #C3CCFF,0 6px 0 #A8B3FF,0 8px 0 #8C98F7,0 10px 0 #707CE8,0 12px 0 #5662D6,0 14px 0 #3F49BF,0 26px 34px rgba(2,2,40,.7),0 0 36px rgba(160,180,255,.55)}
 
 @media (max-width:900px){.wc .qb{display:none !important}}

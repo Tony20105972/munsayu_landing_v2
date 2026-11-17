@@ -16,7 +16,7 @@ export default function Page() {
       <section style={{position: 'relative', overflow: 'hidden', background: 'radial-gradient(circle at 76% 44%, #6A4BF2 0%, #3221B8 24%, #16117A 50%, #0B0943 78%, #07062E 100%)'}}>
         {stars.map((st, i) => <span key={i} className="tw" aria-hidden="true" style={st} />)}
         <div className="wc-ribbon" style={{position: 'absolute', top: '0', right: '6%', width: '168px', height: '112px', background: '#FFF3A8', clipPath: 'polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 74%)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '18px', boxSizing: 'border-box', color: '#14204A', fontWeight: '900', lineHeight: '1.25', textAlign: 'center', zIndex: '2'}}>
-          <span style={{fontSize: '14px'}}>얼리버드</span><span style={{fontSize: '22px', fontFamily: "'Black Han Sans', sans-serif", fontWeight: '400'}}>12.13 마감</span>
+          <span style={{fontSize: '14px'}}>얼리버드</span><span style={{fontSize: '22px', fontFamily: "'Pretendard', sans-serif", fontWeight: '800', letterSpacing: '-0.5px'}}>12.13 마감</span>
         </div>
         <header style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', alignItems: 'center', gap: '12px'}}>
           <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D9D3F7" /><circle cx="20" cy="20" r="14" fill="#3E9C86" /><circle cx="20" cy="20" r="9" fill="#3F5E9E" /><circle cx="20" cy="20" r="5" fill="#F4C04E" /></svg>
@@ -25,8 +25,8 @@ export default function Page() {
         <div style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '40px 24px 96px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '32px'}}>
           <div style={{flex: '999 1 560px', minWidth: '0', display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative', zIndex: '1'}}>
             <p style={{margin: '0 0 18px', fontSize: 'clamp(22px, 2.4vw, 34px)', lineHeight: '1.35', color: '#E7E3FF', letterSpacing: '-0.5px'}}><b style={{fontWeight: '900', color: '#FFFFFF'}}>쓰는 습관</b>을 담다, <b style={{fontWeight: '900', color: '#FFFFFF'}}>새 학년 국어</b>에 닿다!</p>
-            <span className="ex-y" style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(76px, 10vw, 150px)', lineHeight: '1', color: '#E9E5FF', letterSpacing: '4px'}}>2027</span>
-            <span className="ex-d" style={{fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(88px, 13vw, 196px)', lineHeight: '1.05', color: '#FFFFFF', letterSpacing: '-4px'}}>윈터캠프</span>
+            <span className="ex-y" style={{fontFamily: "'Pretendard', sans-serif", fontSize: 'clamp(72px, 9.4vw, 140px)', fontWeight: '800', lineHeight: '1', color: '#ECE9FF', letterSpacing: '-0.02em'}}>2027</span>
+            <span className="ex-d" style={{fontFamily: "'Pretendard', sans-serif", fontSize: 'clamp(84px, 12.4vw, 184px)', fontWeight: '800', lineHeight: '1.08', color: '#FFFFFF', letterSpacing: '-0.045em'}}>윈터캠프</span>
             <span style={{marginTop: '14px', fontSize: 'clamp(16px, 1.6vw, 22px)', fontWeight: '700', color: '#C9C2FF', letterSpacing: '1px'}}>초5·6 문해·사유 집중 과정 · 대치 / 분당 · 1. 5. ~ 1. 29.</span>
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '14px', marginTop: '30px'}}>
               <span style={{minHeight: '76px', padding: '0 28px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0D0B3E', border: '1.5px solid #FFFFFF', borderRadius: '6px', fontSize: '22px', fontWeight: '900'}}>1. 5.(화) 개강</span>
@@ -66,7 +66,7 @@ export default function Page() {
               <ellipse cx="300" cy="512" rx="196" ry="36" fill="url(#baseTop)" />
               <path d="M104 512 L126 604 Q300 650 474 604 L496 512 Q300 560 104 512 Z" fill="url(#baseBody)" />
               <path d="M126 604 Q300 650 474 604 L470 616 Q300 664 130 616 Z" fill="#150E62" />
-              <text x="300" y="590" textAnchor="middle" fontFamily="Black Han Sans, sans-serif" fontSize="24" letterSpacing="6" fill="#FFF3C4">WINTER CAMP 2027</text>
+              <text x="300" y="590" textAnchor="middle" fontFamily="Pretendard, sans-serif" fontSize="22" fontWeight="800" letterSpacing="7" fill="#FFF3C4">WINTER CAMP 2027</text>
               <g transform="rotate(-20 300 300)" filter="url(#glow)"><ellipse cx="300" cy="300" rx="292" ry="92" fill="none" stroke="url(#gold)" strokeWidth="3" strokeDasharray="1 9" strokeLinecap="round" /><ellipse cx="300" cy="300" rx="280" ry="84" fill="none" stroke="url(#gold)" strokeWidth="1.2" opacity="0.8" /></g>
             </svg>
           </div>
