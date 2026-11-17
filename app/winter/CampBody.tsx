@@ -211,7 +211,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center'}}>
               <a href="tel:025635972" style={{background: '#D93654', color: '#FFFFFF', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', flexDirection: 'column', minWidth: '200px'}}><span style={{fontSize: '13px', fontWeight: '700', opacity: '0.9'}}>대치본원</span><b style={{fontSize: '22px'}}>02-563-5972</b></a>
               <a href="tel:0317135972" style={{background: '#FFFFFF', color: '#14204A', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', flexDirection: 'column', minWidth: '200px'}}><span style={{fontSize: '13px', fontWeight: '700', color: '#4B5675'}}>분당 수내점</span><b style={{fontSize: '22px'}}>031-713-5972</b></a>
-              <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '12px', minWidth: '180px'}}><KakaoIcon size={40} /><span style={{display: 'flex', flexDirection: 'column'}}><span style={{fontSize: '13px', fontWeight: '700'}}>카카오 채널</span><b style={{fontSize: '20px'}}>문해와 사유 ›</b></span></a>
+              <a href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{background: '#FEE500', color: '#191919', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '12px', minWidth: '180px'}}><KakaoIcon size={40} /><span style={{display: 'flex', flexDirection: 'column'}}><span style={{fontSize: '13px', fontWeight: '700'}}>카카오 채널</span><b style={{fontSize: '20px'}}>문해와 사유 ›</b></span></a>
             </div>
           </div>
         </div>
@@ -294,7 +294,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
               <div style={{marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px'}}>
                 <a href="tel:025635972" style={{background: '#D93654', color: '#FFFFFF', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{fontSize: '14px', fontWeight: '700'}}>대치본원</span><b style={{fontSize: '20px'}}>02-563-5972</b></a>
                 <a href="tel:0317135972" style={{background: '#FFFFFF', color: '#14204A', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{fontSize: '14px', fontWeight: '700'}}>분당 수내점</span><b style={{fontSize: '20px'}}>031-713-5972</b></a>
-                <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', fontWeight: '700'}}><KakaoIcon size={28} />카카오 채널</span><b style={{fontSize: '18px'}}>문해와 사유 ›</b></a>
+                <a href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{background: '#FEE500', color: '#191919', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', fontWeight: '700'}}><KakaoIcon size={28} />카카오 채널</span><b style={{fontSize: '18px'}}>문해와 사유 ›</b></a>
               </div>
             </div>
           </div>
@@ -338,7 +338,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
               <span style={{marginTop: '8px', alignSelf: 'flex-start', background: t.accent, color: '#FFFFFF', fontSize: '16px', fontWeight: '900', padding: '12px 22px', borderRadius: '8px'}}>전화 걸기 ›</span>
             </a>
           </div>
-          <a id="kakao" href="#kakao" style={{background: '#FEE500', color: '#191919', borderRadius: '20px', padding: '28px 40px', textDecoration: 'none', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px'}}>
+          <a id="kakao" href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{background: '#FEE500', color: '#191919', borderRadius: '20px', padding: '28px 40px', textDecoration: 'none', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px'}}>
             <span style={{display: 'flex', alignItems: 'center', gap: '16px'}}><KakaoIcon size={52} /><span style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '24px'}}>카카오 채널 「문해와 사유」</b><span style={{fontSize: '15px'}}>전화가 어려우시면 카카오톡으로 편하게 문의하세요</span></span></span>
             <span style={{background: '#191919', color: '#FEE500', fontSize: '17px', fontWeight: '900', padding: '14px 24px', borderRadius: '8px'}}>채널 문의하기 ›</span>
           </a>
@@ -346,10 +346,20 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
         </div>
       </section>
 
-      <footer className="wc-sec" style={{borderTop: '1px solid rgba(255,255,255,0.12)', padding: '40px 24px 56px'}}>
-        <div style={{maxWidth: '1120px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '16px', fontSize: '13px', lineHeight: '1.7', color: t.muted}}>
-          <span>문해와 사유 · munsayu.com<br />[학원 등록번호] · [교습비 게시 안내]<br />※ 세부 일정과 커리큘럼은 바뀔 수 있습니다.</span>
-          <span>© 2026 문해와 사유</span>
+      <footer style={{borderTop: '1px solid rgba(255,255,255,0.12)', padding: '56px 24px 64px'}}>
+        <div style={{maxWidth: '1120px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '32px', fontSize: '14px', lineHeight: '1.7', color: t.muted}}>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: '32px 64px', alignItems: 'flex-start'}}>
+            <img src="/assets/logo-winter-white.png" alt="문해와 사유 — 읽고, 생각하고, 표현하다" width={900} height={193} style={{display: 'block', height: '40px', width: 'auto', flex: 'none'}} />
+            <address style={{fontStyle: 'normal', display: 'flex', flexWrap: 'wrap', gap: '24px 56px', flex: '1 1 480px'}}>
+              <div style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '15px', color: '#FFFFFF'}}>대치본원</b><span>서울특별시 강남구 도곡로 515, 2층</span><a href="tel:025635972" style={{color: t.muted, textDecoration: 'none'}}>02-563-5972</a></div>
+              <div style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '15px', color: '#FFFFFF'}}>분당 수내점</b><span>경기도 성남시 분당구 내정로173번길 1, 5층</span><a href="tel:0317135972" style={{color: t.muted, textDecoration: 'none'}}>031-713-5972</a></div>
+              <div style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '15px', color: '#FFFFFF'}}>홈페이지</b><a href="https://munsayu.com" target="_blank" rel="noopener" style={{color: t.muted}}>munsayu.com</a></div>
+            </address>
+          </div>
+          <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '12px', fontSize: '13px', paddingTop: '24px', borderTop: '1px solid rgba(255,255,255,0.1)'}}>
+            <span>[학원 등록번호] · [교습비 게시 안내]<br />※ 세부 일정과 커리큘럼은 바뀔 수 있습니다.</span>
+            <span>© 2026 문해와 사유</span>
+          </div>
         </div>
       </footer>
     </div>

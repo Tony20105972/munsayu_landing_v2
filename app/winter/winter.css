@@ -32,3 +32,4 @@
   .wc .wc-nav a{font-size:16px !important;min-height:64px !important}
 }
 @media (prefers-reduced-motion:reduce){.wc .flake,.wc .tw,.wc .globe,.wc .fw{animation:none}}
+@media (max-width:640px){.wc .wc-logo{height:36px !important}}

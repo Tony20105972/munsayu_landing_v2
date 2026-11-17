@@ -24,9 +24,8 @@ export default function Page() {
         <div className="wc-ribbon" style={{position: 'absolute', top: '0', right: '6%', width: '168px', height: '112px', background: '#FFF3A8', clipPath: 'polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 74%)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '18px', boxSizing: 'border-box', color: '#14204A', fontWeight: '900', lineHeight: '1.25', textAlign: 'center', zIndex: '2'}}>
           <span style={{fontSize: '14px'}}>얼리버드</span><span style={{fontSize: '22px', fontFamily: "'Pretendard', sans-serif", fontWeight: '800', letterSpacing: '-0.5px'}}>12.13 마감</span>
         </div>
-        <header style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', alignItems: 'center', gap: '12px'}}>
-          <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D9D3F7" /><circle cx="20" cy="20" r="14" fill="#3E9C86" /><circle cx="20" cy="20" r="9" fill="#3F5E9E" /><circle cx="20" cy="20" r="5" fill="#F4C04E" /></svg>
-          <b style={{fontSize: '19px', fontWeight: '900'}}>문해와 사유</b><span className="wc-hide-sm" style={{fontSize: '12px', letterSpacing: '3px', color: '#C9C2FF'}}>WINTER CAMP 2027</span>
+        <header style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', alignItems: 'center', gap: '20px'}}>
+          <img src="/assets/logo-winter-white.png" alt="문해와 사유 — 읽고, 생각하고, 표현하다" width={900} height={193} className="wc-logo" style={{display: 'block', height: '44px', width: 'auto'}} /><span className="wc-hide-sm" style={{fontSize: '12px', letterSpacing: '3px', color: '#C9C2FF'}}>WINTER CAMP 2027</span>
         </header>
         <div style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '40px 24px 96px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '32px'}}>
           <div style={{flex: '999 1 560px', minWidth: '0', display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative', zIndex: '1'}}>
@@ -39,7 +38,7 @@ export default function Page() {
               <a href="tel:025635972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#D93654', borderRadius: '6px', textDecoration: 'none', boxShadow: '0 10px 30px rgba(217,54,84,.45)'}}><span style={{fontSize: '14px', fontWeight: '700', opacity: '0.9'}}>대치본원 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>02-563-5972</span></a>
               <a href="tel:0317135972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#FFFFFF', color: '#14204A', borderRadius: '6px', textDecoration: 'none'}}><span style={{fontSize: '14px', fontWeight: '700', color: '#4B5675'}}>분당 수내점 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>031-713-5972</span></a>
             </div>
-            <a href="#kakao" style={{marginTop: '18px', alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '17px', fontWeight: '700', color: '#FFF3A8', textDecoration: 'none'}}><KakaoIcon size={30} />카카오 채널 「문해와 사유」로도 문의하실 수 있습니다 ›</a>
+            <a href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{marginTop: '18px', alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '17px', fontWeight: '700', color: '#FFF3A8', textDecoration: 'none'}}><KakaoIcon size={30} />카카오 채널 「문해와 사유」로도 문의하실 수 있습니다 ›</a>
           </div>
           <div style={{flex: '1 1 380px', minWidth: '0', display: 'flex', justifyContent: 'center'}}>
             <svg className="globe" viewBox="0 0 600 660" role="img" aria-label="코스모 행성이 든 스노우볼과 금빛 궤도" style={{width: '100%', maxWidth: '600px', height: 'auto'}}>

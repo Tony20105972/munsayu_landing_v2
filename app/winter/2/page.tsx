@@ -30,9 +30,8 @@ export default function Page() {
           <g transform="translate(1300 120) scale(1.35)" filter="url(#fwglow)"><g className="fw" stroke="#C9D6FF" strokeWidth="2.4" strokeLinecap="round" style={{animationDelay: '-1.1s'}}><line x1="10" y1="0" x2="48" y2="0" /><line x1="8" y1="5" x2="40" y2="26" /><line x1="4" y1="9" x2="20" y2="44" /><line x1="-1" y1="10" x2="-7" y2="48" /><line x1="-7" y1="8" x2="-31" y2="36" /><line x1="-10" y1="3" x2="-46" y2="14" /><line x1="-10" y1="-3" x2="-46" y2="-14" /><line x1="-7" y1="-8" x2="-31" y2="-36" /><line x1="-1" y1="-10" x2="-7" y2="-48" /><line x1="4" y1="-9" x2="20" y2="-44" /><line x1="8" y1="-5" x2="40" y2="-26" /></g><circle r="12" fill="url(#core)" /></g>
           <g transform="translate(860 110) scale(0.7)" filter="url(#fwglow)"><g className="fw" stroke="#FFE38A" strokeWidth="3" strokeLinecap="round" style={{animationDelay: '-0.6s'}}><line x1="10" y1="0" x2="48" y2="0" /><line x1="8" y1="5" x2="40" y2="26" /><line x1="4" y1="9" x2="20" y2="44" /><line x1="-1" y1="10" x2="-7" y2="48" /><line x1="-7" y1="8" x2="-31" y2="36" /><line x1="-10" y1="3" x2="-46" y2="14" /><line x1="-10" y1="-3" x2="-46" y2="-14" /><line x1="-7" y1="-8" x2="-31" y2="-36" /><line x1="-1" y1="-10" x2="-7" y2="-48" /><line x1="4" y1="-9" x2="20" y2="-44" /><line x1="8" y1="-5" x2="40" y2="-26" /></g></g>
         </svg>
-        <header style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', alignItems: 'center', gap: '12px'}}>
-          <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D9D3F7" /><circle cx="20" cy="20" r="14" fill="#3E9C86" /><circle cx="20" cy="20" r="9" fill="#3F5E9E" /><circle cx="20" cy="20" r="5" fill="#F4C04E" /></svg>
-          <b style={{fontSize: '19px', fontWeight: '900'}}>문해와 사유</b><span className="wc-hide-sm" style={{fontSize: '12px', letterSpacing: '3px', color: '#B7D0FF'}}>WINTER CAMP 2027</span>
+        <header style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '24px', display: 'flex', alignItems: 'center', gap: '20px'}}>
+          <img src="/assets/logo-winter-white.png" alt="문해와 사유 — 읽고, 생각하고, 표현하다" width={900} height={193} className="wc-logo" style={{display: 'block', height: '44px', width: 'auto'}} /><span className="wc-hide-sm" style={{fontSize: '12px', letterSpacing: '3px', color: '#B7D0FF'}}>WINTER CAMP 2027</span>
         </header>
         <div style={{position: 'relative', maxWidth: '1320px', margin: '0 auto', padding: '40px 24px 72px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '24px'}}>
           <div style={{flex: '999 1 600px', minWidth: '0', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: '1'}}>
@@ -49,7 +48,7 @@ export default function Page() {
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '14px', marginTop: '36px'}}>
               <a href="tel:025635972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#D93654', borderRadius: '6px', textDecoration: 'none', boxShadow: '0 10px 30px rgba(217,54,84,.45)'}}><span style={{fontSize: '14px', fontWeight: '700', opacity: '0.9'}}>대치본원 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>02-563-5972</span></a>
               <a href="tel:0317135972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#FFFFFF', color: '#14204A', borderRadius: '6px', textDecoration: 'none'}}><span style={{fontSize: '14px', fontWeight: '700', color: '#4B5675'}}>분당 수내점 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>031-713-5972</span></a>
-              <a href="#kakao" style={{minHeight: '76px', padding: '10px 26px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: '10px', background: '#FEE500', color: '#191919', borderRadius: '6px', fontSize: '19px', fontWeight: '900', textDecoration: 'none'}}><KakaoIcon size={34} />카카오 채널 문의 <span aria-hidden="true">›</span></a>
+              <a href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{minHeight: '76px', padding: '10px 26px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: '10px', background: '#FEE500', color: '#191919', borderRadius: '6px', fontSize: '19px', fontWeight: '900', textDecoration: 'none'}}><KakaoIcon size={34} />카카오 채널 문의 <span aria-hidden="true">›</span></a>
             </div>
           </div>
           <div style={{flex: '1 1 360px', minWidth: '0', display: 'flex', justifyContent: 'center'}}>
@@ -101,7 +100,7 @@ export default function Page() {
         </div>
         {flakes.map((f, i) => <span key={i} className="flake" aria-hidden="true" style={f} />)}
         <div className="qb" style={{position: 'absolute', right: '0', bottom: '96px', width: '240px', display: 'flex', flexDirection: 'column', zIndex: '2'}}>
-          <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '20px 22px', display: 'flex', flexDirection: 'column', gap: '6px', textDecoration: 'none'}}>
+          <a href="https://pf.kakao.com/_yZKWX" target="_blank" rel="noopener" style={{background: '#FEE500', color: '#191919', padding: '20px 22px', display: 'flex', flexDirection: 'column', gap: '6px', textDecoration: 'none'}}>
             <span style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '19px', fontWeight: '900', lineHeight: '1.3'}}>카카오 채널<br />문의하기<KakaoIcon size={34} /></span>
             <span style={{fontSize: '13px'}}>「문해와 사유」 채널로 편하게 물어보세요</span>
           </a>
