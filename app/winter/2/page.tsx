@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import CampBody from '../CampBody';
+import KakaoIcon from '../KakaoIcon';
 import SectionNav from '../SectionNav';
 import { sky } from '../sky';
 
@@ -42,7 +43,7 @@ export default function Page() {
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '14px', marginTop: '36px'}}>
               <a href="tel:025635972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#D93654', borderRadius: '6px', textDecoration: 'none', boxShadow: '0 10px 30px rgba(217,54,84,.45)'}}><span style={{fontSize: '14px', fontWeight: '700', opacity: '0.9'}}>대치본원 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>02-563-5972</span></a>
               <a href="tel:0317135972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#FFFFFF', color: '#14204A', borderRadius: '6px', textDecoration: 'none'}}><span style={{fontSize: '14px', fontWeight: '700', color: '#4B5675'}}>분당 수내점 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>031-713-5972</span></a>
-              <a href="#kakao" style={{minHeight: '76px', padding: '10px 26px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: '10px', background: '#FEE500', color: '#191919', borderRadius: '6px', fontSize: '19px', fontWeight: '900', textDecoration: 'none'}}>카카오 채널 문의 <span aria-hidden="true">›</span></a>
+              <a href="#kakao" style={{minHeight: '76px', padding: '10px 26px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: '10px', background: '#FEE500', color: '#191919', borderRadius: '6px', fontSize: '19px', fontWeight: '900', textDecoration: 'none'}}><KakaoIcon size={34} />카카오 채널 문의 <span aria-hidden="true">›</span></a>
             </div>
           </div>
           <div style={{flex: '1 1 360px', minWidth: '0', display: 'flex', justifyContent: 'center'}}>
@@ -95,7 +96,7 @@ export default function Page() {
         {flakes.map((f, i) => <span key={i} className="flake" aria-hidden="true" style={f} />)}
         <div className="qb" style={{position: 'absolute', right: '0', bottom: '96px', width: '240px', display: 'flex', flexDirection: 'column', zIndex: '2'}}>
           <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '20px 22px', display: 'flex', flexDirection: 'column', gap: '6px', textDecoration: 'none'}}>
-            <span style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '19px', fontWeight: '900', lineHeight: '1.3'}}>카카오 채널<br />문의하기<span aria-hidden="true" style={{width: '34px', height: '34px', borderRadius: '50%', background: '#191919', color: '#FEE500', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: '900'}}>톡</span></span>
+            <span style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '19px', fontWeight: '900', lineHeight: '1.3'}}>카카오 채널<br />문의하기<KakaoIcon size={34} /></span>
             <span style={{fontSize: '13px'}}>「문해와 사유」 채널로 편하게 물어보세요</span>
           </a>
           <a href="tel:025635972" style={{background: '#0B0A24', padding: '16px 22px', display: 'flex', flexDirection: 'column', gap: '2px', textDecoration: 'none', borderBottom: '1px solid #23224A'}}><span style={{fontSize: '13px', color: '#B7C2E8'}}>대치본원</span><b style={{fontSize: '20px'}}>02-563-5972</b></a>

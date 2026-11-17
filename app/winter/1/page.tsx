@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import CampBody from '../CampBody';
+import KakaoIcon from '../KakaoIcon';
 import SectionNav from '../SectionNav';
 import { sky } from '../sky';
 
@@ -32,7 +33,7 @@ export default function Page() {
               <a href="tel:025635972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#D93654', borderRadius: '6px', textDecoration: 'none', boxShadow: '0 10px 30px rgba(217,54,84,.45)'}}><span style={{fontSize: '14px', fontWeight: '700', opacity: '0.9'}}>대치본원 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>02-563-5972</span></a>
               <a href="tel:0317135972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#FFFFFF', color: '#14204A', borderRadius: '6px', textDecoration: 'none'}}><span style={{fontSize: '14px', fontWeight: '700', color: '#4B5675'}}>분당 수내점 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>031-713-5972</span></a>
             </div>
-            <a href="#kakao" style={{marginTop: '18px', alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '17px', fontWeight: '700', color: '#FFF3A8', textDecoration: 'none'}}><span aria-hidden="true" style={{width: '30px', height: '30px', borderRadius: '50%', background: '#FEE500', color: '#191919', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: '900'}}>톡</span>카카오 채널 「문해와 사유」로도 문의하실 수 있습니다 ›</a>
+            <a href="#kakao" style={{marginTop: '18px', alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '17px', fontWeight: '700', color: '#FFF3A8', textDecoration: 'none'}}><KakaoIcon size={30} />카카오 채널 「문해와 사유」로도 문의하실 수 있습니다 ›</a>
           </div>
           <div style={{flex: '1 1 380px', minWidth: '0', display: 'flex', justifyContent: 'center'}}>
             <svg className="globe" viewBox="0 0 600 660" role="img" aria-label="코스모 행성이 든 스노우볼과 금빛 궤도" style={{width: '100%', maxWidth: '600px', height: 'auto'}}>

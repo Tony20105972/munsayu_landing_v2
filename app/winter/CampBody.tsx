@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import KakaoIcon from './KakaoIcon';
 
 // 시안 C1·C2가 함께 쓰는 공용 본문(CampBody). tone으로 색조만 바뀝니다.
 const TONES = {
@@ -210,7 +211,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center'}}>
               <a href="tel:025635972" style={{background: '#D93654', color: '#FFFFFF', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', flexDirection: 'column', minWidth: '200px'}}><span style={{fontSize: '13px', fontWeight: '700', opacity: '0.9'}}>대치본원</span><b style={{fontSize: '22px'}}>02-563-5972</b></a>
               <a href="tel:0317135972" style={{background: '#FFFFFF', color: '#14204A', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', flexDirection: 'column', minWidth: '200px'}}><span style={{fontSize: '13px', fontWeight: '700', color: '#4B5675'}}>분당 수내점</span><b style={{fontSize: '22px'}}>031-713-5972</b></a>
-              <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center', minWidth: '180px'}}><span style={{fontSize: '13px', fontWeight: '700'}}>카카오 채널</span><b style={{fontSize: '20px'}}>문해와 사유 ›</b></a>
+              <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 26px', borderRadius: '8px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '12px', minWidth: '180px'}}><KakaoIcon size={40} /><span style={{display: 'flex', flexDirection: 'column'}}><span style={{fontSize: '13px', fontWeight: '700'}}>카카오 채널</span><b style={{fontSize: '20px'}}>문해와 사유 ›</b></span></a>
             </div>
           </div>
         </div>
@@ -293,7 +294,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
               <div style={{marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px'}}>
                 <a href="tel:025635972" style={{background: '#D93654', color: '#FFFFFF', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{fontSize: '14px', fontWeight: '700'}}>대치본원</span><b style={{fontSize: '20px'}}>02-563-5972</b></a>
                 <a href="tel:0317135972" style={{background: '#FFFFFF', color: '#14204A', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{fontSize: '14px', fontWeight: '700'}}>분당 수내점</span><b style={{fontSize: '20px'}}>031-713-5972</b></a>
-                <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{fontSize: '14px', fontWeight: '700'}}>카카오 채널</span><b style={{fontSize: '18px'}}>문해와 사유 ›</b></a>
+                <a href="#kakao" style={{background: '#FEE500', color: '#191919', padding: '14px 18px', borderRadius: '8px', textDecoration: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><span style={{display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', fontWeight: '700'}}><KakaoIcon size={28} />카카오 채널</span><b style={{fontSize: '18px'}}>문해와 사유 ›</b></a>
               </div>
             </div>
           </div>
@@ -338,7 +339,7 @@ export default function CampBody({ tone }: { tone: keyof typeof TONES }) {
             </a>
           </div>
           <a id="kakao" href="#kakao" style={{background: '#FEE500', color: '#191919', borderRadius: '20px', padding: '28px 40px', textDecoration: 'none', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '16px'}}>
-            <span style={{display: 'flex', alignItems: 'center', gap: '16px'}}><span aria-hidden="true" style={{width: '52px', height: '52px', borderRadius: '50%', background: '#191919', color: '#FEE500', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px', fontWeight: '900'}}>톡</span><span style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '24px'}}>카카오 채널 「문해와 사유」</b><span style={{fontSize: '15px'}}>전화가 어려우시면 카카오톡으로 편하게 문의하세요</span></span></span>
+            <span style={{display: 'flex', alignItems: 'center', gap: '16px'}}><KakaoIcon size={52} /><span style={{display: 'flex', flexDirection: 'column', gap: '2px'}}><b style={{fontSize: '24px'}}>카카오 채널 「문해와 사유」</b><span style={{fontSize: '15px'}}>전화가 어려우시면 카카오톡으로 편하게 문의하세요</span></span></span>
             <span style={{background: '#191919', color: '#FEE500', fontSize: '17px', fontWeight: '900', padding: '14px 24px', borderRadius: '8px'}}>채널 문의하기 ›</span>
           </a>
           <p style={{margin: '0', textAlign: 'center', fontSize: '15px', lineHeight: '1.8', color: t.muted}}>상담 화~금 13:00~21:00 · 토·일 09:30~21:00 · 얼리버드 등록 혜택 12월 13일(일) 마감</p>
