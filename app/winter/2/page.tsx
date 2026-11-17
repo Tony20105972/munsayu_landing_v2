@@ -5,8 +5,8 @@ import KakaoIcon from '../KakaoIcon';
 import SectionNav from '../SectionNav';
 import { sky } from '../sky';
 
-const TITLE = '문해와 사유 | 2027 윈터캠프 — 초5·6 문해·사유 집중 과정';
-const DESCRIPTION = '읽고 쓰고 고쳐 쓰는 4주. 초5·6 · 대치본원 / 분당 수내점 · 2027. 1. 5. ~ 1. 29. · 화~금 09:00~13:00 · 반당 10명 이하';
+const TITLE = '문해와 사유 | 2027 윈터캠프 — 초4·5·6 문해·사유 집중 과정';
+const DESCRIPTION = '읽고 쓰고 고쳐 쓰는 4주. 초4·5·6 · 대치본원 / 분당 수내점 · 2027. 1. 5. ~ 1. 29. · 화~금 09:00~13:00 · 반당 10명 이하';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -40,7 +40,7 @@ export default function Page() {
             <span className="ex-g" style={{marginTop: '28px', fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(76px, 10vw, 150px)', lineHeight: '1', letterSpacing: '2px'}}>2027</span>
             <span className="ex-g" style={{marginTop: '6px', fontFamily: "'Black Han Sans', sans-serif", fontSize: 'clamp(92px, 13.5vw, 200px)', lineHeight: '1.02', letterSpacing: '-6px'}}>윈터캠프</span>
             <dl style={{margin: '40px 0 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px 24px', fontSize: '20px', maxWidth: '840px'}}>
-              <div style={{display: 'flex', alignItems: 'center', gap: '14px'}}><dt style={{background: '#2147F0', borderRadius: '999px', padding: '8px 20px', fontSize: '17px', fontWeight: '700', flex: 'none'}}>모집 대상</dt><dd style={{margin: '0', fontWeight: '900'}}>초5·6</dd></div>
+              <div style={{display: 'flex', alignItems: 'center', gap: '14px'}}><dt style={{background: '#2147F0', borderRadius: '999px', padding: '8px 20px', fontSize: '17px', fontWeight: '700', flex: 'none'}}>모집 대상</dt><dd style={{margin: '0', fontWeight: '900'}}>초4·5·6</dd></div>
               <div style={{display: 'flex', alignItems: 'center', gap: '14px'}}><dt style={{background: '#2147F0', borderRadius: '999px', padding: '8px 20px', fontSize: '17px', fontWeight: '700', flex: 'none'}}>운영 기간</dt><dd style={{margin: '0', fontWeight: '900'}}>1. 5. ~ 1. 29. [4주 완성]</dd></div>
               <div style={{display: 'flex', alignItems: 'center', gap: '14px'}}><dt style={{background: '#2147F0', borderRadius: '999px', padding: '8px 20px', fontSize: '17px', fontWeight: '700', flex: 'none'}}>모집 정원</dt><dd style={{margin: '0', fontWeight: '900'}}>반당 10명 이하</dd></div>
               <div style={{display: 'flex', alignItems: 'center', gap: '14px'}}><dt style={{background: '#2147F0', borderRadius: '999px', padding: '8px 20px', fontSize: '17px', fontWeight: '700', flex: 'none'}}>수업 시간</dt><dd style={{margin: '0', fontWeight: '900'}}>화~금 09:00~13:00</dd></div>

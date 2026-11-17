@@ -29,7 +29,7 @@ export default function Page() {
               <a href="https://munsayu.com" target="_blank" rel="noopener" className="btn-ghost-light" style={{display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 60, padding: '0 22px', borderRadius: 8, border: '1.5px solid rgba(255,255,255,0.55)', color: '#FFFFFF', fontSize: 16, fontWeight: 700, textDecoration: 'none'}}>문해와 사유 홈페이지
                 <svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7 17L17 7" /><path d="M8 7h9v9" /></svg></a>
             </div>
-            <p style={{margin: '16px 0 0', fontSize: 15, color: '#C3C6E0'}}>초등 5~6학년 학부모 대상 · 대치본원 / 분당 수내점</p>
+            <p style={{margin: '16px 0 0', fontSize: 15, color: '#C3C6E0'}}>초등 4~6학년 학부모 대상 · 대치본원 / 분당 수내점</p>
             <div style={{marginTop: 48, display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', maxWidth: 540, borderTop: '1px solid #4A4C78'}}>
               <div style={{padding: '16px 16px 0 0'}}><p style={{margin: 0, fontSize: 'clamp(28px, 2.8vw, 38px)', lineHeight: '1.1', fontWeight: 800, fontVariantNumeric: 'tabular-nums'}}>1,000<span style={{fontSize: '0.45em', marginLeft: 2}}>개</span></p><p style={{margin: '6px 0 0', fontSize: 13, color: '#C3C6E0'}}>학습용 핵심 어휘</p></div>
               <div style={{padding: '16px 16px 0', borderLeft: '1px solid #4A4C78'}}><p style={{margin: 0, fontSize: 'clamp(28px, 2.8vw, 38px)', lineHeight: '1.1', fontWeight: 800, fontVariantNumeric: 'tabular-nums'}}>50<span style={{fontSize: '0.45em', marginLeft: 2}}>단원</span></p><p style={{margin: '6px 0 0', fontSize: 13, color: '#C3C6E0'}}>COSMO CORE 교재</p></div>
@@ -778,7 +778,7 @@ export default function Page() {
           <h3 className="serif" style={{margin: '36px 0 0', fontSize: 'clamp(23px, 2.3vw, 30px)', lineHeight: '1.4', fontWeight: 900, fontFamily: 'Pretendard'}}>지금 읽는 힘이,<br />앞으로 배우는 힘이 됩니다.</h3>
           <p style={{margin: '12px 0 0', color: '#E3E5F2'}}>문해와 사유 학부모 교육 설명회에서 그 교육의 방향과 방법을 확인해 보세요.</p>
           <dl style={{margin: '36px 0 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(150px, 100%), 1fr))', gap: 10}}>
-            <div style={{padding: '16px 18px', background: '#33346A', borderRadius: 12}}><dt style={{fontSize: 13, color: '#C3C6E0'}}>대상</dt><dd style={{margin: '4px 0 0', fontWeight: 800}}>초등 5~6학년 학부모</dd></div>
+            <div style={{padding: '16px 18px', background: '#33346A', borderRadius: 12}}><dt style={{fontSize: 13, color: '#C3C6E0'}}>대상</dt><dd style={{margin: '4px 0 0', fontWeight: 800}}>초등 4~6학년 학부모</dd></div>
             <div style={{padding: '16px 18px', background: '#33346A', borderRadius: 12}}><dt style={{fontSize: 13, color: '#C3C6E0'}}>지역</dt><dd style={{margin: '4px 0 0', fontWeight: 800}}>대치본원 · 분당 수내점</dd></div>
             <div style={{padding: '16px 18px', background: '#33346A', borderRadius: 12}}><dt style={{fontSize: 13, color: '#C3C6E0'}}>설명회 일정</dt><dd style={{margin: '4px 0 0', fontWeight: 800}}>신청자 대상 별도 안내</dd></div>
           </dl>

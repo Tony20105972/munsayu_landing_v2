@@ -5,8 +5,8 @@ import KakaoIcon from '../KakaoIcon';
 import SectionNav from '../SectionNav';
 import { sky } from '../sky';
 
-const TITLE = '문해와 사유 | 2027 윈터캠프 — 초5·6 문해·사유 집중 과정';
-const DESCRIPTION = '읽고 쓰고 고쳐 쓰는 4주. 초5·6 · 대치본원 / 분당 수내점 · 2027. 1. 5. ~ 1. 29. · 화~금 09:00~13:00 · 반당 10명 이하';
+const TITLE = '문해와 사유 | 2027 윈터캠프 — 초4·5·6 문해·사유 집중 과정';
+const DESCRIPTION = '읽고 쓰고 고쳐 쓰는 4주. 초4·5·6 · 대치본원 / 분당 수내점 · 2027. 1. 5. ~ 1. 29. · 화~금 09:00~13:00 · 반당 10명 이하';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -32,7 +32,7 @@ export default function Page() {
             <p style={{margin: '0 0 18px', fontSize: 'clamp(22px, 2.4vw, 34px)', lineHeight: '1.35', color: '#E7E3FF', letterSpacing: '-0.5px'}}><b style={{fontWeight: '900', color: '#FFFFFF'}}>쓰는 습관</b>을 담다, <b style={{fontWeight: '900', color: '#FFFFFF'}}>새 학년 국어</b>에 닿다!</p>
             <span className="ex-y" style={{fontFamily: "'Pretendard', sans-serif", fontSize: 'clamp(72px, 9.4vw, 140px)', fontWeight: '800', lineHeight: '1', color: '#ECE9FF', letterSpacing: '-0.02em'}}>2027</span>
             <span className="ex-d" style={{fontFamily: "'Pretendard', sans-serif", fontSize: 'clamp(84px, 12.4vw, 184px)', fontWeight: '800', lineHeight: '1.08', color: '#FFFFFF', letterSpacing: '-0.045em'}}>윈터캠프</span>
-            <span style={{marginTop: '14px', fontSize: 'clamp(16px, 1.6vw, 22px)', fontWeight: '700', color: '#C9C2FF', letterSpacing: '1px'}}>초5·6 문해·사유 집중 과정 · 대치 / 분당 · 1. 5. ~ 1. 29.</span>
+            <span style={{marginTop: '14px', fontSize: 'clamp(16px, 1.6vw, 22px)', fontWeight: '700', color: '#C9C2FF', letterSpacing: '1px'}}>초4·5·6 문해·사유 집중 과정 · 대치 / 분당 · 1. 5. ~ 1. 29.</span>
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '14px', marginTop: '30px'}}>
               <span style={{minHeight: '76px', padding: '0 28px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0D0B3E', border: '1.5px solid #FFFFFF', borderRadius: '6px', fontSize: '22px', fontWeight: '900'}}>1. 5.(화) 개강</span>
               <a href="tel:025635972" style={{minHeight: '76px', padding: '10px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#D93654', borderRadius: '6px', textDecoration: 'none', boxShadow: '0 10px 30px rgba(217,54,84,.45)'}}><span style={{fontSize: '14px', fontWeight: '700', opacity: '0.9'}}>대치본원 전화 문의</span><span style={{fontSize: '24px', fontWeight: '900', letterSpacing: '0.5px'}}>02-563-5972</span></a>
