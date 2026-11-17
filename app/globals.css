@@ -1,0 +1,24 @@
+@font-face{font-family:'Pretendard';src:url(/fonts/PretendardVariable.woff2) format('woff2-variations'),url(/fonts/PretendardVariable.woff2) format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;background:#FCFBF8}
+*{box-sizing:border-box}
+p,h1,h2,h3,li,blockquote,dd,dt,td,th,figcaption,label,legend,span{word-break:keep-all;overflow-wrap:break-word}
+p{text-wrap:pretty}
+.serif{font-family:'Noto Serif KR','Nanum Myeongjo',serif}
+a{color:#315AA8}a:hover{color:#254985}
+#apply{scroll-margin-top:84px}
+input:focus-visible,select:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #FFCE67;outline-offset:2px}
+.btn-primary:hover{background:#254985 !important}
+.btn-amber:hover{background:#F5C468 !important}
+.btn-ghost:hover{background:rgba(36,35,75,0.06) !important}
+.btn-ghost-light:hover{background:rgba(255,255,255,0.12) !important}
+.hub{display:grid;grid-template-columns:1fr 1.15fr 1fr;grid-template-areas:". k ." "s h m" ". c .";gap:28px 32px;position:relative}
+.hub-k{grid-area:k}.hub-s{grid-area:s}.hub-m{grid-area:m}.hub-c{grid-area:c}.hub-h{grid-area:h}
+.stairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:end}
+@media (max-width:860px){
+.hub{grid-template-columns:1fr;grid-template-areas:"h" "k" "m" "s" "c"}
+.hub-lines{display:none}
+.stairs{grid-template-columns:1fr;align-items:stretch}
+.stair-bar{height:auto !important}
+}
+@media (max-width:640px){.hide-sm{display:none !important}.logo-h{height:36px !important}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto !important}}

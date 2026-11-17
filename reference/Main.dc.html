@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문해와 사유 | 초등 문해력·독서·사고력 교육 설명회</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&amp;display=swap">
+<style>
+@font-face{font-family:'Pretendard';src:url(/_blob/a5115e094dd5cb38460f23a78cd85776) format('woff2-variations'),url(/_blob/a5115e094dd5cb38460f23a78cd85776) format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;background:#FCFBF8}
+*{box-sizing:border-box}
+p,h1,h2,h3,li,blockquote,dd,dt,td,th,figcaption,label,legend,span{word-break:keep-all;overflow-wrap:break-word}
+p{text-wrap:pretty}
+.serif{font-family:'Noto Serif KR','Nanum Myeongjo',serif}
+a{color:#315AA8}a:hover{color:#254985}
+#apply{scroll-margin-top:84px}
+input:focus-visible,select:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #FFCE67;outline-offset:2px}
+.btn-primary:hover{background:#254985 !important}
+.btn-amber:hover{background:#F5C468 !important}
+.btn-ghost:hover{background:rgba(36,35,75,0.06) !important}
+.btn-ghost-light:hover{background:rgba(255,255,255,0.12) !important}
+.hub{display:grid;grid-template-columns:1fr 1.15fr 1fr;grid-template-areas:". k ." "s h m" ". c .";gap:28px 32px;position:relative}
+.hub-k{grid-area:k}.hub-s{grid-area:s}.hub-m{grid-area:m}.hub-c{grid-area:c}.hub-h{grid-area:h}
+.stairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:end}
+@media (max-width:860px){
+.hub{grid-template-columns:1fr;grid-template-areas:"h" "k" "m" "s" "c"}
+.hub-lines{display:none}
+.stairs{grid-template-columns:1fr;align-items:stretch}
+.stair-bar{height:auto !important}
+}
+@media (max-width:640px){.hide-sm{display:none !important}.logo-h{height:36px !important}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto !important}}
+</style>
+</helmet>
+<div style="background: #FCFBF8; color: #1A2140; font-family: 'Pretendard', system-ui, sans-serif; font-size: 17px; line-height: 1.75">
+
+<!-- HEADER -->
+<header style="position: sticky; top: 0; z-index: 20; background: rgba(252,251,248,0.97); border-bottom: 1px solid #E5E8ED">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px); height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 18px; text-decoration: none; color: #1A2140">
+<img src="/_blob/3233e8236112d4e6a394696a2149bc3e" alt="문해와 사유 — 읽고, 생각하고, 표현하다" class="logo-h" style="height: 48px; width: auto; display: block">
+<span class="hide-sm" style="padding-left: 18px; border-left: 1px solid #D5DAE3; font-size: 13px; color: #667085">대치본원 · 분당 수내점</span>
+</a>
+<nav style="display: flex; align-items: center; gap: 8px" aria-label="주요 링크">
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="hide-sm btn-ghost" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: 8px; color: #24234B; font-size: 15px; font-weight: 700; text-decoration: none">홈페이지
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<a href="#apply" class="btn-primary" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #315AA8; color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none; white-space: nowrap">설명회·진단 신청</a>
+</nav>
+</div>
+</header>
+
+<!-- 01 HERO -->
+<section id="top" style="background: #24234B; color: #FFFFFF; padding: clamp(72px, 8vw, 112px) clamp(20px, 4vw, 56px) 0; overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto">
+<sc-if value="{{ isA }}" hint-placeholder-val="{{ true }}">
+<h1 class="serif" style="margin: 0; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.22; font-weight: 900; letter-spacing: -0.03em; font-family: Pretendard">지금 <span style="color: #F1B54A">읽는 힘</span>이,<br>앞으로 <span style="color: #F1B54A">배우는 힘</span>이 됩니다.</h1>
+</sc-if>
+<sc-if value="{{ isB }}" hint-placeholder-val="{{ false }}">
+<h1 class="serif" style="margin: 0; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.22; font-weight: 900; letter-spacing: -0.03em">책을 <span style="color: #F1B54A">읽는</span> 아이와,<br>책을 <span style="color: #F1B54A">이해하는</span> 아이는 다릅니다.</h1>
+</sc-if>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 32px 56px">
+<div style="flex: 6 1 480px; min-width: 0; padding-bottom: clamp(56px, 7vw, 96px)">
+<p style="margin: 28px 0 0; max-width: 34em; font-size: clamp(18px, 1.7vw, 22px); line-height: 1.6; font-weight: 600">초등학교 때의 문해력이 중·고등학교 공부의 기반이 됩니다.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform" target="_blank" rel="noopener" class="btn-amber" style="display: inline-flex; align-items: center; gap: 10px; min-height: 60px; padding: 0 28px; border-radius: 8px; background: #F1B54A; color: #1A2140; font-size: 18px; font-weight: 800; text-decoration: none">교육 설명회 연계 무료 진단 신청
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="btn-ghost-light" style="display: inline-flex; align-items: center; gap: 8px; min-height: 60px; padding: 0 22px; border-radius: 8px; border: 1.5px solid rgba(255,255,255,0.55); color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none">문해와 사유 홈페이지
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+<p style="margin: 16px 0 0; font-size: 15px; color: #C3C6E0">초등 5~6학년 학부모 대상 · 대치본원 / 분당 수내점</p>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 540px; border-top: 1px solid #4A4C78">
+<div style="padding: 16px 16px 0 0"><p style="margin: 0; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">1,000<span style="font-size: 0.45em; margin-left: 2px">개</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">학습용 핵심 어휘</p></div>
+<div style="padding: 16px 16px 0; border-left: 1px solid #4A4C78"><p style="margin: 0; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">50<span style="font-size: 0.45em; margin-left: 2px">단원</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">COSMO CORE 교재</p></div>
+<div style="padding: 16px 0 0 16px; border-left: 1px solid #4A4C78"><p style="margin: 0; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">750<span style="font-size: 0.45em; margin-left: 2px">문항</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">객관식 문해력 문항</p></div>
+</div>
+</div>
+<div style="flex: 5 1 360px; min-width: 0; display: flex; justify-content: center; align-self: flex-end">
+<svg viewBox="0 0 520 290" style="width: 100%; max-width: 520px; display: block" role="img" aria-label="CORE 어휘에서 FLARE 독서, 논리적 글쓰기로 넓어지는 교육과정">
+<defs>
+<path id="arc-o" d="M 47 290 A 213 213 0 0 1 473 290"></path>
+<path id="arc-m" d="M 107 290 A 153 153 0 0 1 413 290"></path>
+<path id="arc-i" d="M 167 290 A 93 93 0 0 1 353 290"></path>
+</defs>
+<path d="M 47 290 A 213 213 0 0 1 473 290" fill="none" stroke="#F1B54A" stroke-width="56"></path>
+<path d="M 107 290 A 153 153 0 0 1 413 290" fill="none" stroke="#3FA690" stroke-width="56"></path>
+<path d="M 167 290 A 93 93 0 0 1 353 290" fill="none" stroke="#9DBCE9" stroke-width="56"></path>
+<text font-family="Pretendard, sans-serif" font-size="18" font-weight="800" fill="#1A2140" dominant-baseline="middle"><textPath href="#arc-o" startOffset="50%" text-anchor="middle">논리적 글쓰기</textPath></text>
+<text font-family="Pretendard, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" dominant-baseline="middle"><textPath href="#arc-m" startOffset="50%" text-anchor="middle">FLARE 독서</textPath></text>
+<text font-family="Pretendard, sans-serif" font-size="17" font-weight="800" fill="#1A2140" dominant-baseline="middle"><textPath href="#arc-i" startOffset="50%" text-anchor="middle">CORE 어휘</textPath></text>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 01 HERO · 리드 -->
+<section style="background: #FCFBF8; padding: clamp(64px, 8vw, 112px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-start">
+<p class="serif" style="flex: 1 1 340px; margin: 0; font-size: clamp(26px, 2.8vw, 38px); line-height: 1.42; font-weight: 700; letter-spacing: -0.015em">책을 많이 읽는 것만으로는 <span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">충분하지 않습니다.</span></p>
+<div style="flex: 1.4 1 420px; max-width: 640px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0">모르는 단어를 정확히 이해하고, 긴 글의 핵심을 파악하고, 자신의 생각을 근거와 함께 설명할 수 있어야 합니다.</p>
+<p style="margin: 0">고교학점제 시행과 논·서술형 평가의 중요성이 부각되는 교육환경.</p>
+<p style="margin: 0">이제는 무엇을 알고 있는가뿐 아니라, <strong style="font-weight: 700; background: linear-gradient(transparent 62%, #DCE6F7 62%)">배운 것을 얼마나 정확하게 이해하고 자신의 언어로 표현할 수 있는가</strong>에도 주목해야 합니다.</p>
+<p style="margin: 0">문해와 사유는 초등 시기에 필요한 어휘력부터 독해력, 사고력과 표현력까지 체계적으로 연결합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(56px, 7vw, 88px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 0; border-radius: 12px; overflow: hidden">
+<div style="padding: 28px 28px 32px; background: #315AA8; color: #FFFFFF">
+<p style="margin: 0; font-size: 13px; font-weight: 700; color: #DCE6F7; font-variant-numeric: tabular-nums">01</p>
+<p class="serif" style="margin: 8px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; line-height: 1.25">CORE 어휘</p>
+</div>
+<div style="padding: 28px 28px 32px; background: #1F6B5E; color: #FFFFFF">
+<p style="margin: 0; font-size: 13px; font-weight: 700; color: #CDE9E1; font-variant-numeric: tabular-nums">02</p>
+<p class="serif" style="margin: 8px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; line-height: 1.25">FLARE 독서</p>
+</div>
+<div style="padding: 28px 28px 32px; background: #F1B54A; color: #1A2140">
+<p style="margin: 0; font-size: 13px; font-weight: 700; color: #5C4310; font-variant-numeric: tabular-nums">03</p>
+<p class="serif" style="margin: 8px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; line-height: 1.25">논리적 글쓰기</p>
+</div>
+</div>
+<p class="serif" style="margin: 18px 0 0; font-size: clamp(18px, 1.6vw, 21px); font-weight: 700; color: #24234B; text-align: right">읽다 — 쓰다 — 말하다</p>
+</div>
+</section>
+
+<!-- 02 PROBLEM -->
+<section style="background: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">책을 읽는 아이와,<br>책을 <span style="color: #315AA8">이해하는</span> 아이는<br>다릅니다.</h2>
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 10px; color: #3D4560">
+<p style="margin: 0">줄거리는 이야기하지만 중요한 의미를 놓치기도 합니다.</p>
+<p style="margin: 0">정답은 맞히지만 그 이유를 설명하기는 어려워하기도 합니다.</p>
+<p style="margin: 0">생각은 있지만 글로 옮기려면 어디서부터 시작해야 할지 막막해하기도 합니다.</p>
+</div>
+</div>
+<div style="flex: 1.1 1 420px; min-width: 0; background: #EDF2FA; padding: clamp(24px, 3.5vw, 44px); border-radius: 12px">
+<p style="margin: 0 0 22px; font-size: 16px; font-weight: 700; color: #315AA8">우리 아이에게 이런 질문을 해보신 적 있으신가요?</p>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p class="serif" style="margin: 0; align-self: flex-start; max-width: 90%; padding: 16px 22px; background: #FFFFFF; border-radius: 4px 18px 18px 18px; font-size: clamp(19px, 1.8vw, 23px); line-height: 1.45; font-weight: 600">“이 책은 어떤 내용이었어?”</p>
+<p class="serif" style="margin: 0 0 0 8%; align-self: flex-start; max-width: 90%; padding: 16px 22px; background: #FFFFFF; border-radius: 4px 18px 18px 18px; font-size: clamp(19px, 1.8vw, 23px); line-height: 1.45; font-weight: 600">“주인공은 왜 그렇게 행동했을까?”</p>
+<p class="serif" style="margin: 0 0 0 16%; align-self: flex-start; max-width: 84%; padding: 16px 22px; background: #315AA8; color: #FFFFFF; border-radius: 4px 18px 18px 18px; font-size: clamp(19px, 1.8vw, 23px); line-height: 1.45; font-weight: 600">“너는 왜 그렇게 생각해?”</p>
+</div>
+</div>
+</div>
+
+<div style="margin-top: clamp(72px, 9vw, 120px)">
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 0 clamp(6px, 1.2vw, 16px)" role="img" aria-label="읽기, 이해, 생각, 표현은 서로 다른 단계입니다">
+<div style="height: 96px; background: #DCE6F7; border-radius: 8px 8px 0 0; display: flex; align-items: flex-end; padding: 14px clamp(8px, 1.4vw, 20px)"><span style="font-size: clamp(16px, 2vw, 26px); font-weight: 800; color: #24234B">읽기</span></div>
+<span class="serif" style="font-size: clamp(22px, 2.6vw, 36px); font-weight: 700; color: #D9A441; padding-bottom: 24px">≠</span>
+<div style="height: 140px; background: #9DBCE9; border-radius: 8px 8px 0 0; display: flex; align-items: flex-end; padding: 14px clamp(8px, 1.4vw, 20px)"><span style="font-size: clamp(16px, 2vw, 26px); font-weight: 800; color: #1A2140">이해</span></div>
+<span class="serif" style="font-size: clamp(22px, 2.6vw, 36px); font-weight: 700; color: #D9A441; padding-bottom: 24px">≠</span>
+<div style="height: 184px; background: #315AA8; border-radius: 8px 8px 0 0; display: flex; align-items: flex-end; padding: 14px clamp(8px, 1.4vw, 20px)"><span style="font-size: clamp(16px, 2vw, 26px); font-weight: 800; color: #FFFFFF">생각</span></div>
+<span class="serif" style="font-size: clamp(22px, 2.6vw, 36px); font-weight: 700; color: #D9A441; padding-bottom: 24px">≠</span>
+<div style="height: 228px; background: #24234B; border-radius: 8px 8px 0 0; display: flex; align-items: flex-end; padding: 14px clamp(8px, 1.4vw, 20px)"><span style="font-size: clamp(16px, 2vw, 26px); font-weight: 800; color: #FFFFFF">표현</span></div>
+</div>
+<div style="height: 3px; background: #1A2140"></div>
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 12px 32px">
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.55; font-weight: 700">읽는 것과 이해하는 것은 다릅니다.</p>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.55; font-weight: 700">이해하는 것과 생각하는 것도 다릅니다.</p>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.55; font-weight: 700">생각하는 것과 표현하는 것 역시 다릅니다.</p>
+</div>
+<div style="margin-top: 40px; padding: 28px clamp(20px, 3vw, 36px); background: #24234B; color: #FFFFFF; border-radius: 12px; display: flex; flex-wrap: wrap; gap: 12px 40px; align-items: baseline">
+<p class="serif" style="flex: 1 1 300px; margin: 0; font-size: clamp(21px, 2.1vw, 28px); line-height: 1.4; font-weight: 700; color: #F1B54A">그 차이를 메우는 교육이 필요합니다.</p>
+<p style="flex: 1.4 1 380px; margin: 0; color: #E3E5F2">문해와 사유는 단순한 독서량이나 문제풀이를 넘어, 읽은 내용을 자신의 생각으로 발전시키는 과정에 집중합니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 03 EDUCATION SHIFT -->
+<section style="background: #FCFBF8; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; max-width: 900px; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">교육은 달라지고 있습니다.<br><span style="color: #315AA8">우리 아이의 공부는 무엇이 달라져야 할까요?</span></h2>
+
+<div style="margin-top: clamp(48px, 6vw, 80px); position: relative">
+<div style="position: absolute; left: 0; right: 0; top: 23px; height: 3px; background: #9DBCE9" aria-hidden="true"></div>
+<div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 40px">
+<div>
+<div style="display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; border-radius: 50%; background: #315AA8; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; box-shadow: 0 0 0 6px #FCFBF8">2025</span><span style="font-size: 15px; font-weight: 800; color: #315AA8; background: #FCFBF8; padding-right: 10px">고교학점제</span></div>
+<p style="margin: 20px 0 0; font-size: 18px; font-weight: 600; line-height: 1.6">고교학점제는 2025년 고등학교 신입생부터 전면 적용되었습니다.</p>
+</div>
+<div>
+<div style="display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; border-radius: 50%; background: #24234B; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; box-shadow: 0 0 0 6px #FCFBF8">2028</span><span style="font-size: 15px; font-weight: 800; color: #24234B; background: #FCFBF8; padding-right: 10px">대학입시제도 개편</span></div>
+<p style="margin: 20px 0 0; font-size: 18px; font-weight: 600; line-height: 1.6">2028 대학입시제도 개편에 따라 통합형 수능과 내신 5등급 체제가 도입됩니다.</p>
+</div>
+<div>
+<div style="display: flex; align-items: center; gap: 14px"><span style="width: 48px; height: 48px; border-radius: 50%; background: #F1B54A; color: #1A2140; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 6px #FCFBF8" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg></span><span style="font-size: 15px; font-weight: 800; color: #8A5A00; background: #FCFBF8; padding-right: 10px">논·서술형 평가</span></div>
+<p style="margin: 20px 0 0; font-size: 18px; font-weight: 600; line-height: 1.6">학교 교육에서는 학생의 사고력과 문제해결력을 살피는 논·서술형 평가의 중요성도 강조되고 있습니다.</p>
+</div>
+</div>
+</div>
+<p style="margin: 20px 0 0; font-size: 13px; color: #667085">정책 근거: 교육부 공식 자료 (페이지 하단 출처 참조)</p>
+
+<div style="margin-top: clamp(56px, 7vw, 88px); display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-start">
+<div style="flex: 1 1 340px; min-width: 0; padding: 24px 26px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px">
+<p style="margin: 0; font-weight: 800">물론 모든 시험이 서술형으로 바뀌는 것은 아닙니다.</p>
+<p style="margin: 10px 0 0; color: #3D4560">하지만 분명히 생각해 볼 질문이 있습니다.</p>
+</div>
+<div style="flex: 1.6 1 460px; min-width: 0">
+<p class="serif" style="margin: 0; font-size: clamp(23px, 2.4vw, 33px); line-height: 1.45; font-weight: 700; font-family: Pretendard, sans-serif">앞으로 더 복잡한 지문과 개념을 만날 아이에게, <span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">지금 가장 필요한 준비는 무엇일까요?</span></p>
+<div style="margin-top: 22px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; color: #6B7385; text-decoration: line-through; text-decoration-color: #B8BFCC">고등학교 문제를 초등학교 때 미리 푸는 것일까요?</p>
+<p style="margin: 0; color: #6B7385; text-decoration: line-through; text-decoration-color: #B8BFCC">더 어려운 책을 더 빨리 읽는 것일까요?</p>
+</div>
+<p style="margin: 24px 0 0; font-weight: 600">문해와 사유는 그보다 먼저 갖추어야 할 힘에 주목합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px">
+<div style="padding: 28px; background: #315AA8; color: #FFFFFF; border-radius: 12px"><p class="serif" style="margin: 0; font-size: clamp(23px, 2.3vw, 30px); font-weight: 800; line-height: 1.35; font-family: Pretendard, sans-serif">정확하게<br>읽는 힘.</p></div>
+<div style="padding: 28px; background: #1F6B5E; color: #FFFFFF; border-radius: 12px"><p class="serif" style="margin: 0; font-size: clamp(23px, 2.3vw, 30px); font-weight: 800; line-height: 1.35">깊이<br>생각하는 힘.</p></div>
+<div style="padding: 28px; background: #F1B54A; color: #1A2140; border-radius: 12px"><p class="serif" style="margin: 0; font-size: clamp(23px, 2.3vw, 30px); font-weight: 800; line-height: 1.35">논리적으로<br>표현하는 힘.</p></div>
+</div>
+<p style="margin: 20px 0 0; font-size: 18px; font-weight: 700">교육제도가 달라져도 배움의 바탕이 되는 능력입니다.</p>
+</div>
+</section>
+
+<!-- 04 WHY IT MATTERS -->
+<section style="background: #EDF2FA; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">국어에서 시작해,<br><span style="color: #315AA8">모든 교과로 이어지는 힘.</span></h2>
+
+<div class="hub" style="margin-top: clamp(48px, 6vw, 72px)">
+<svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none" aria-hidden="true">
+<line x1="50" y1="50" x2="50" y2="12" stroke="#9DBCE9" stroke-width="2" stroke-dasharray="6 6" vector-effect="non-scaling-stroke"></line>
+<line x1="50" y1="50" x2="50" y2="88" stroke="#9DBCE9" stroke-width="2" stroke-dasharray="6 6" vector-effect="non-scaling-stroke"></line>
+<line x1="50" y1="50" x2="14" y2="50" stroke="#9DBCE9" stroke-width="2" stroke-dasharray="6 6" vector-effect="non-scaling-stroke"></line>
+<line x1="50" y1="50" x2="86" y2="50" stroke="#9DBCE9" stroke-width="2" stroke-dasharray="6 6" vector-effect="non-scaling-stroke"></line>
+</svg>
+<div class="hub-h" style="position: relative; align-self: center; padding: 32px 28px; background: #24234B; color: #FFFFFF; border-radius: 16px; text-align: center">
+<p style="margin: 0; font-size: 13px; font-weight: 700; color: #F1B54A">공통된 능력</p>
+<p class="serif" style="margin: 10px 0 0; font-size: clamp(19px, 1.7vw, 22px); line-height: 1.55; font-weight: 700; font-family: Pretendard">어휘를 이해하고, 정보를 해석하고, 근거를 바탕으로 판단하는 능력.</p>
+</div>
+<div class="hub-k" style="position: relative; padding: 22px 24px; background: #FFFFFF; border-radius: 12px; border-top: 4px solid #315AA8">
+<p class="serif" style="margin: 0; font-size: 25px; font-weight: 900; color: #315AA8; font-family: Bebas Neue, sans-serif">국어</p>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65">국어에서는 글의 주장과 근거를 이해해야 합니다.</p>
+</div>
+<div class="hub-m" style="position: relative; padding: 22px 24px; background: #FFFFFF; border-radius: 12px; border-top: 4px solid #24234B">
+<p class="serif" style="margin: 0; font-size: 25px; font-weight: 900; color: #24234B; font-family: Pretendard">수학</p>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65">수학에서는 문제의 조건과 관계를 정확하게 파악해야 합니다.</p>
+</div>
+<div class="hub-s" style="position: relative; padding: 22px 24px; background: #FFFFFF; border-radius: 12px; border-top: 4px solid #D9A441">
+<p class="serif" style="margin: 0; font-size: 25px; font-weight: 900; color: #8A5A00; font-family: Bebas Neue, sans-serif">사회</p>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65">사회에서는 서로 다른 관점과 개념을 비교해야 합니다.</p>
+</div>
+<div class="hub-c" style="position: relative; padding: 22px 24px; background: #FFFFFF; border-radius: 12px; border-top: 4px solid #1F6B5E">
+<p class="serif" style="margin: 0; font-size: 25px; font-weight: 900; color: #1F6B5E; font-family: Bebas Neue, sans-serif">과학</p>
+<p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65">과학에서는 원인과 결과를 연결하고 현상을 설명해야 합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: 24px 72px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px; color: #3D4560">
+<p style="margin: 0">과목마다 배우는 내용은 다릅니다. 그러나 그 바탕에는 공통된 능력이 있습니다.</p>
+<p style="margin: 0">학년이 올라갈수록 아이가 읽어야 하는 글은 길어지고, 이해해야 하는 개념은 복잡해집니다.</p>
+<p style="margin: 0">초등 문해력 교육이 중요한 이유는 단순히 국어 한 과목을 잘하기 위해서가 아닙니다.</p>
+</div>
+<p class="serif" style="flex: 1 1 420px; min-width: 0; margin: 0; font-size: clamp(21px, 2vw, 26px); line-height: 1.5; font-weight: 700"><span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">앞으로 배울 지식을 스스로 이해하고 활용할 수 있는 기반</span>을 마련하기 위해서입니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 05 COSMO PROJECT -->
+<section style="background: #FCFBF8; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-end">
+<h2 class="serif" style="flex: 1 1 420px; min-width: 0; margin: 0; font-size: clamp(34px, 4.2vw, 58px); line-height: 1.2; font-weight: 900; letter-spacing: -0.03em; font-family: Pretendard, sans-serif">교과서 전체를<br><span style="color: #315AA8">데이터로</span> 읽었습니다.</h2>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px; color: #3D4560">
+<p style="margin: 0">초등 시기에 어떤 어휘를 배워야 할까요?</p>
+<p style="margin: 0">어떤 단어를 정확히 알아야 교과서를 이해할 수 있을까요?</p>
+<p style="margin: 14px 0 0; color: #1A2140; font-weight: 700">문해와 사유의 COSMO 프로젝트는 이 질문에서 출발했습니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); padding: clamp(24px, 3.5vw, 44px); background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 16px">
+<p style="margin: 0 0 14px; font-size: 14px; font-weight: 800; color: #24234B">2015·2022 개정 교육과정 교과서</p>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)) minmax(0, 1.7fr) minmax(0, 1.7fr); gap: 6px" role="img" aria-label="초등 1~6학년, 중학교, 고등학교 교과서 어휘를 데이터베이스화하고, 그중 초등 시기 어휘를 선별해 교육과정을 구성">
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초1</div>
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초2</div>
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초3</div>
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초4</div>
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초5</div>
+<div style="height: 64px; border-radius: 8px; background: #9DBCE9; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #1A2140">초6</div>
+<div style="height: 64px; border-radius: 8px; background: #DCE6F7; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #24234B">중학교</div>
+<div style="height: 64px; border-radius: 8px; background: #DCE6F7; display: flex; align-items: center; justify-content: center; font-size: clamp(12px, 1.3vw, 16px); font-weight: 800; color: #24234B">고등학교</div>
+<div style="grid-column: 1 / -1; margin-top: 4px; padding: 10px 0 0; border-top: 2px solid #24234B; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; font-weight: 800; color: #24234B"><span>어휘 데이터베이스화</span><span aria-hidden="true">↓</span></div>
+<div style="grid-column: 1 / 7; margin-top: 10px; padding: 16px 18px; border-radius: 8px; background: #315AA8; color: #FFFFFF; font-size: clamp(14px, 1.4vw, 17px); font-weight: 800; line-height: 1.4">초등 시기에 익혀야 할 어휘 선별</div>
+<div style="grid-column: 7 / -1; margin-top: 10px; border-radius: 8px; background: repeating-linear-gradient(135deg, #FFFFFF 0 6px, #EDF2FA 6px 8px)"></div>
+<div style="grid-column: 2 / 6; padding: 16px 18px; border-radius: 8px; background: #24234B; color: #FFFFFF; font-size: clamp(14px, 1.4vw, 17px); font-weight: 800; line-height: 1.4; text-align: center">교과 학습·독서와 연결된 교육과정</div>
+</div>
+<div style="margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 12px 40px; color: #3D4560">
+<p style="margin: 0">초등학교 2015·2022 개정 교육과정의 1~6학년 교과서부터 중·고등학교 교과서의 어휘를 데이터베이스화했습니다.</p>
+<p style="margin: 0">그중 초등 시기에 익혀야 할 어휘를 선별하고, 실제 교과 학습과 독서에 연결할 수 있도록 교육과정을 구성했습니다.</p>
+</div>
+</div>
+
+<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px">
+<div style="padding: 26px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 100%; aspect-ratio: 40 / 25; background-image: radial-gradient(circle at center, #315AA8 0 30%, transparent 34%); background-size: 2.5% 4%" role="img" aria-label="점 1,000개"></div>
+<div><p style="margin: 0; font-size: clamp(40px, 3.8vw, 52px); line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: #24234B">1,000<span style="font-size: 0.4em; margin-left: 3px">개</span></p><p style="margin: 8px 0 0; font-size: 15px; font-weight: 600; color: #3D4560">학습용 핵심 어휘</p></div>
+</div>
+<div style="padding: 26px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 100%; aspect-ratio: 40 / 25; display: flex; align-items: center"><div style="width: 100%; aspect-ratio: 10 / 5; background-color: #24234B; background-image: repeating-linear-gradient(90deg, transparent 0 calc(10% - 3px), #FFFFFF calc(10% - 3px) 10%), repeating-linear-gradient(180deg, transparent 0 calc(20% - 3px), #FFFFFF calc(20% - 3px) 20%)" role="img" aria-label="칸 50개"></div></div>
+<div><p style="margin: 0; font-size: clamp(40px, 3.8vw, 52px); line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: #24234B">50<span style="font-size: 0.4em; margin-left: 3px">단원</span></p><p style="margin: 8px 0 0; font-size: 15px; font-weight: 600; color: #3D4560">COSMO CORE 어휘 교재</p></div>
+</div>
+<div style="padding: 26px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 100%; aspect-ratio: 40 / 25; display: flex; flex-direction: column; justify-content: center; gap: 10px" aria-hidden="true">
+<div style="display: flex; gap: 8px"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #9DBCE9"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #9DBCE9"></span><span style="width: 22px; height: 22px; border-radius: 50%; background: #F1B54A; border: 2px solid #F1B54A"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #9DBCE9"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #9DBCE9"></span></div>
+<div style="height: 8px; width: 92%; background: #E5E8ED; border-radius: 4px"></div>
+<div style="height: 8px; width: 74%; background: #E5E8ED; border-radius: 4px"></div>
+<div style="height: 8px; width: 84%; background: #E5E8ED; border-radius: 4px"></div>
+</div>
+<div><p style="margin: 0; font-size: clamp(40px, 3.8vw, 52px); line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: #24234B">750<span style="font-size: 0.4em; margin-left: 3px">문항</span></p><p style="margin: 8px 0 0; font-size: 15px; font-weight: 600; color: #3D4560">객관식 문해력 문항</p></div>
+</div>
+<div style="padding: 26px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px; display: flex; flex-direction: column; gap: 18px">
+<div style="width: 100%; aspect-ratio: 40 / 25; display: flex; flex-direction: column; justify-content: center; gap: 10px" role="img" aria-label="10개월">
+<div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; height: 36px"><span style="background: #DCE6F7; border-radius: 3px"></span><span style="background: #C6D7F0; border-radius: 3px"></span><span style="background: #B0C8EA; border-radius: 3px"></span><span style="background: #9DBCE9; border-radius: 3px"></span><span style="background: #7FA2D8; border-radius: 3px"></span><span style="background: #6188C8; border-radius: 3px"></span><span style="background: #4A70B8; border-radius: 3px"></span><span style="background: #315AA8; border-radius: 3px"></span><span style="background: #2A3F7A; border-radius: 3px"></span><span style="background: #24234B; border-radius: 3px"></span></div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: #667085"><span>1개월</span><span>10개월</span></div>
+</div>
+<div><p style="margin: 0; font-size: clamp(40px, 3.8vw, 52px); line-height: 1; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: #24234B">10<span style="font-size: 0.4em; margin-left: 3px">개월</span></p><p style="margin: 8px 0 0; font-size: 15px; font-weight: 600; color: #3D4560">교재 제작 기간</p></div>
+</div>
+</div>
+<p style="margin: 10px 0 0; font-size: 13px; color: #667085">출처: COSMO 브로슈어</p>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: 24px 56px; align-items: center">
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; padding: 22px 24px; background: #24234B; color: #FFFFFF; border-radius: 12px; font-weight: 600">대치동 인문논술 20년 경력의 김윤환 원장과 서울대·서울교대 재학생으로 구성된 COSMO 연구팀이 제작과 검토에 참여했습니다.</p>
+<div style="flex: 1.2 1 440px; min-width: 0">
+<p class="serif" style="margin: 0; font-size: clamp(21px, 2vw, 26px); line-height: 1.5; font-weight: 700">많이 외우게 하는 것보다 중요한 것은, <span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">무엇을 왜 배워야 하는지 체계적으로 설계하는 것</span>입니다.</p>
+<p style="margin: 10px 0 0; color: #3D4560">문해와 사유의 교육은 그 설계에서 시작됩니다.</p>
+</div>
+</div>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 22px; border-radius: 8px; border: 1.5px solid #24234B; color: #24234B; font-size: 16px; font-weight: 700; text-decoration: none">홈페이지에서 COSMO 교육과정 더 보기
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- 06 CORE VOCABULARY -->
+<section style="background: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard, sans-serif"><span style="color: #315AA8">한 글자</span> 차이가,<br>이해의 차이를 만듭니다.</h2>
+<p style="margin: 36px 0 0; font-size: 19px; font-weight: 700">다음 단어의 차이를 아이가 설명할 수 있을까요?</p>
+
+<div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px">
+<div style="padding: 30px 20px; background: #EDF2FA; border-radius: 12px; text-align: center">
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">결<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">재</span></p>
+<p style="margin: 4px 0; font-size: 15px; font-weight: 700; color: #6B7385">/</p>
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">결<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">제</span></p>
+</div>
+<div style="padding: 30px 20px; background: #EDF2FA; border-radius: 12px; text-align: center">
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">맞<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">히</span>다</p>
+<p style="margin: 4px 0; font-size: 15px; font-weight: 700; color: #6B7385">/</p>
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">맞<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">추</span>다</p>
+</div>
+<div style="padding: 30px 20px; background: #EDF2FA; border-radius: 12px; text-align: center">
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">반<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">드시</span></p>
+<p style="margin: 4px 0; font-size: 15px; font-weight: 700; color: #6B7385">/</p>
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">반<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">듯이</span></p>
+</div>
+<div style="padding: 30px 20px; background: #EDF2FA; border-radius: 12px; text-align: center">
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">가<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">르치</span>다</p>
+<p style="margin: 4px 0; font-size: 15px; font-weight: 700; color: #6B7385">/</p>
+<p class="serif" style="margin: 0; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.25; font-weight: 800">가<span style="color: #315AA8; background: linear-gradient(transparent 62%, #F9DFA6 62%)">리키</span>다</p>
+</div>
+</div>
+
+<div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px 48px">
+<p style="flex: 1 1 300px; margin: 0; font-weight: 600">비슷하게 생겼지만 의미는 다른 단어들.</p>
+<p style="flex: 2 1 480px; margin: 0; color: #3D4560">한두 글자의 차이를 이해하지 못하면 문장의 뜻을 놓치고, 글 전체의 흐름을 파악하기 어려워질 수 있습니다.</p>
+</div>
+
+<p style="margin: clamp(48px, 6vw, 72px) 0 20px; font-size: 19px; font-weight: 800">COSMO CORE는 혼동하기 쉬운 단어를 나란히 놓고 배웁니다.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px">
+<li style="padding: 24px; background: #FCFBF8; border: 1px solid #E5E8ED; border-radius: 12px">
+<span style="display: inline-flex; width: 40px; height: 40px; border-radius: 50%; background: #DCE6F7; color: #315AA8; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">01</span>
+<p style="margin: 14px 0 6px; font-size: 20px; font-weight: 800">단어 비교</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">비슷한 단어의 의미와 차이를 이해합니다.</p>
+</li>
+<li style="padding: 24px; background: #FCFBF8; border: 1px solid #E5E8ED; border-radius: 12px">
+<span style="display: inline-flex; width: 40px; height: 40px; border-radius: 50%; background: #9DBCE9; color: #1A2140; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">02</span>
+<p style="margin: 14px 0 6px; font-size: 20px; font-weight: 800">교과 연결</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">단어가 실제 교과서에서 어떻게 쓰이는지 살펴봅니다.</p>
+</li>
+<li style="padding: 24px; background: #FCFBF8; border: 1px solid #E5E8ED; border-radius: 12px">
+<span style="display: inline-flex; width: 40px; height: 40px; border-radius: 50%; background: #315AA8; color: #FFFFFF; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">03</span>
+<p style="margin: 14px 0 6px; font-size: 20px; font-weight: 800">표현 확장</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">배운 어휘를 문장과 설명에 활용합니다.</p>
+</li>
+<li style="padding: 24px; background: #FCFBF8; border: 1px solid #E5E8ED; border-radius: 12px">
+<span style="display: inline-flex; width: 40px; height: 40px; border-radius: 50%; background: #24234B; color: #FFFFFF; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">04</span>
+<p style="margin: 14px 0 6px; font-size: 20px; font-weight: 800">문해력 문항</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">독해 지문 속에서 단어의 의미를 다시 확인합니다.</p>
+</li>
+</ol>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+<p class="serif" style="margin: 0; font-size: clamp(23px, 2.4vw, 33px); line-height: 1.4; font-weight: 800; font-family: Pretendard, sans-serif"><span style="color: #6B7385; text-decoration: line-through; text-decoration-color: #B8BFCC">외운 단어</span>에서, <span style="color: #315AA8">이해하고 사용하는 어휘</span>로.</p>
+<p style="margin: 0; color: #3D4560">어휘는 독해의 시작이자 생각을 표현하는 도구입니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 07 FLARE READING -->
+<section style="background: #1F6B5E; color: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 72px">
+<h2 class="serif" style="flex: 1 1 360px; min-width: 0; margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">토론보다 먼저,<br><span style="color: #F1B54A">잘 읽어야</span> 합니다.</h2>
+<div style="flex: 1.3 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 14px; color: #EAF6F2">
+<p style="margin: 0; color: #FFFFFF; font-weight: 700; font-size: 19px">깊이 있는 토론은 정확한 독서에서 시작됩니다.</p>
+<p style="margin: 0">책의 내용을 충분히 이해하지 못한 채 자신의 의견만 이야기하는 것은 깊이 있는 사고로 이어지기 어렵습니다.</p>
+<p style="margin: 0">문해와 사유의 COSMO FLARE는 책을 제대로 읽고 이해한 뒤, 그 위에 질문과 토론을 쌓아갑니다.</p>
+<p style="margin: 0">책마다 주제와 관련된 읽기 자료를 함께 살펴보고, 책 밖의 세상으로 생각을 확장합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px">
+<div style="padding: 26px 28px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.28); border-radius: 12px">
+<p style="margin: 0 0 8px; font-size: 21px; font-weight: 800">황금 밸런스 찾기</p>
+<p style="margin: 0; color: #EAF6F2">하나의 질문에 대해 여러 입장을 검토하며 생각을 발전시킵니다.</p>
+</div>
+<div style="padding: 26px 28px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.28); border-radius: 12px">
+<p style="margin: 0 0 8px; font-size: 21px; font-weight: 800">찬반 줄다리기</p>
+<p style="margin: 0; color: #EAF6F2">자신의 입장을 정하고 근거를 들어 말하며, 다른 의견에 답합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(72px, 9vw, 120px); text-align: center">
+<p style="margin: 0 0 20px; font-size: 16px; font-weight: 600; color: #CDE9E1">예를 들어 이런 질문입니다.</p>
+<p class="serif" style="margin: 0 auto; max-width: 1000px; font-size: clamp(30px, 4.2vw, 58px); line-height: 1.32; font-weight: 800; letter-spacing: -0.02em; font-family: Pretendard, sans-serif">“아픈 기억과 감정까지 지운 세상은 정말 <span style="color: #F1B54A">행복할까?</span>”</p>
+</div>
+
+<div style="margin: clamp(40px, 5vw, 64px) auto 0; max-width: 860px">
+<svg viewBox="0 0 560 210" style="width: 100%; display: block" aria-hidden="true">
+<line x1="280" y1="36" x2="280" y2="196" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+<line x1="220" y1="198" x2="340" y2="198" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+<circle cx="280" cy="30" r="9" fill="#F1B54A"></circle>
+<line x1="80" y1="56" x2="480" y2="56" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+<line x1="80" y1="56" x2="34" y2="140" stroke="#CDE9E1" stroke-width="2"></line>
+<line x1="80" y1="56" x2="126" y2="140" stroke="#CDE9E1" stroke-width="2"></line>
+<path d="M 30 140 Q 80 182 130 140 Z" fill="#9DBCE9"></path>
+<line x1="480" y1="56" x2="434" y2="140" stroke="#CDE9E1" stroke-width="2"></line>
+<line x1="480" y1="56" x2="526" y2="140" stroke="#CDE9E1" stroke-width="2"></line>
+<path d="M 430 140 Q 480 182 530 140 Z" fill="#F1B54A"></path>
+</svg>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<p style="margin: 0; padding: 18px 20px; background: #FFFFFF; color: #1A2140; border-radius: 12px; font-size: 16px; line-height: 1.65; font-weight: 600; border-top: 5px solid #9DBCE9">누군가는 행복할 것이라고 생각할 수 있습니다.</p>
+<p style="margin: 0; padding: 18px 20px; background: #FFFFFF; color: #1A2140; border-radius: 12px; font-size: 16px; line-height: 1.65; font-weight: 600; border-top: 5px solid #F1B54A">누군가는 아픈 기억도 인간에게 중요한 경험이라고 생각할 수 있습니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(56px, 7vw, 88px); display: flex; flex-wrap: wrap; gap: 24px 72px; align-items: flex-start">
+<p style="flex: 1 1 300px; margin: 0; color: #EAF6F2; font-size: 19px">중요한 것은 어떤 답을 선택했는지가 아닙니다.</p>
+<div style="flex: 1.6 1 460px; min-width: 0">
+<p style="margin: 0; font-size: clamp(20px, 1.9vw, 24px); line-height: 1.6; font-weight: 800"><span style="background: linear-gradient(transparent 62%, rgba(241,181,74,0.55) 62%)">왜 그렇게 생각하는지, 어떤 근거를 제시하는지, 다른 생각을 어떻게 이해하는지</span>입니다.</p>
+<p class="serif" style="margin: 20px 0 0; font-size: 20px; font-weight: 600; color: #FFFFFF">좋은 독서는 책을 덮은 뒤에도 생각이 이어집니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 08 CLASS EXPERIENCE -->
+<section style="background: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-end">
+<h2 class="serif" style="flex: 1 1 400px; min-width: 0; margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">문해와 사유의 하루는<br><span style="color: #315AA8">세 교시</span>입니다.</h2>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-weight: 600">어휘를 배우고, 책을 살피고, 생각을 나눕니다.</p>
+<p style="margin: 0; color: #3D4560">서로 다른 활동이 아니라 하나의 흐름으로 이어지는 교육입니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px)">
+<div style="display: flex; align-items: stretch; height: 108px; border-radius: 12px; overflow: hidden" aria-hidden="true">
+<div style="flex: 50 1 0; min-width: 0; background: #315AA8; color: #FFFFFF; display: flex; flex-direction: column; justify-content: center; padding: 0 clamp(10px, 1.6vw, 22px)"><span style="font-size: clamp(12px, 1.2vw, 15px); font-weight: 700; color: #DCE6F7">1교시</span><span style="font-size: clamp(14px, 1.8vw, 23px); font-weight: 800; line-height: 1.3">CORE 어휘</span></div>
+<div style="flex: 10 1 0; min-width: 0; background: repeating-linear-gradient(135deg, #FFFFFF 0 5px, #E5E8ED 5px 7px)"></div>
+<div style="flex: 50 1 0; min-width: 0; background: #F1B54A; color: #1A2140; display: flex; flex-direction: column; justify-content: center; padding: 0 clamp(10px, 1.6vw, 22px)"><span style="font-size: clamp(12px, 1.2vw, 15px); font-weight: 700; color: #5C4310">2교시</span><span style="font-size: clamp(14px, 1.8vw, 23px); font-weight: 800; line-height: 1.3">도서 안내와 쓰기</span></div>
+<div style="flex: 10 1 0; min-width: 0; background: repeating-linear-gradient(135deg, #FFFFFF 0 5px, #E5E8ED 5px 7px)"></div>
+<div style="flex: 50 1 0; min-width: 0; background: #1F6B5E; color: #FFFFFF; display: flex; flex-direction: column; justify-content: center; padding: 0 clamp(10px, 1.6vw, 22px)"><span style="font-size: clamp(12px, 1.2vw, 15px); font-weight: 700; color: #CDE9E1">3교시</span><span style="font-size: clamp(14px, 1.8vw, 23px); font-weight: 800; line-height: 1.3">FLARE 토론과 토의</span></div>
+</div>
+<div style="display: flex; margin-top: 8px; font-size: 13px; font-weight: 700; color: #667085; font-variant-numeric: tabular-nums" aria-hidden="true">
+<span style="flex: 50 1 0; min-width: 0">0분</span><span style="flex: 10 1 0; min-width: 0">50</span><span style="flex: 50 1 0; min-width: 0">60</span><span style="flex: 10 1 0; min-width: 0">110</span><span style="flex: 50 1 0; min-width: 0; display: flex; justify-content: space-between"><span>120</span><span>170분</span></span>
+</div>
+
+<div style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 28px 40px">
+<div style="padding-top: 16px; border-top: 3px solid #315AA8">
+<p style="margin: 0; font-size: 15px; font-weight: 800; color: #315AA8; font-variant-numeric: tabular-nums">1교시 — CORE 어휘 / 50분</p>
+<p style="margin: 10px 0 0; color: #3D4560">단어를 비교하고 의미를 정확히 이해합니다. 교과서와 실제 문장에 연결하여 배운 어휘를 활용합니다.</p>
+</div>
+<div style="padding-top: 16px; border-top: 3px solid #F1B54A">
+<p style="margin: 0; font-size: 15px; font-weight: 800; color: #8A5A00; font-variant-numeric: tabular-nums">2교시 — 도서 안내와 쓰기 / 50분</p>
+<p style="margin: 10px 0 0; color: #3D4560">함께 읽을 책을 살펴보고 핵심 내용을 정리합니다. 읽은 내용을 바탕으로 생각을 글로 표현합니다.</p>
+</div>
+<div style="padding-top: 16px; border-top: 3px solid #1F6B5E">
+<p style="margin: 0; font-size: 15px; font-weight: 800; color: #1F6B5E; font-variant-numeric: tabular-nums">3교시 — FLARE 토론과 토의 / 50분</p>
+<p style="margin: 10px 0 0; color: #3D4560">책에서 발견한 질문을 중심으로 생각을 나눕니다. 근거를 제시하고 다른 관점을 검토합니다.</p>
+</div>
+</div>
+<p style="margin: 28px 0 0; font-size: 15px; color: #667085">교시 사이에는 각각 10분의 휴식 시간이 있습니다.</p>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); padding: 28px clamp(20px, 3vw, 36px); background: #EDF2FA; border-radius: 12px">
+<p class="serif" style="margin: 0; font-size: clamp(20px, 2vw, 26px); line-height: 1.5; font-weight: 800; font-family: Pretendard">단어를 이해하는 것에서 시작해, <span style="color: #315AA8">자기 생각을 말하고 쓰는 것까지.</span></p>
+<p style="margin: 8px 0 0; color: #3D4560">문해와 사유의 수업은 이 모든 과정을 연결합니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 09 LEARNING PATH -->
+<section style="background: #FCFBF8; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">단어에서 논술까지,<br><span style="color: #315AA8">한 단계씩</span> 올라갑니다.</h2>
+
+<div class="stairs" style="margin-top: clamp(48px, 6vw, 72px)">
+<div class="stair-bar" style="height: 260px; padding: 26px; background: #DCE6F7; border-radius: 12px 12px 0 0">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #315AA8; font-variant-numeric: tabular-nums">STEP 01</p>
+<p class="serif" style="margin: 6px 0 10px; font-size: clamp(23px, 2.3vw, 30px); font-weight: 900; line-height: 1.3; font-family: Pretendard">정확히 읽기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">어휘를 구별하고, 문장의 의미를 이해하며, 글의 핵심 내용을 파악합니다.</p>
+</div>
+<div class="stair-bar" style="height: 340px; padding: 26px; background: #315AA8; color: #FFFFFF; border-radius: 12px 12px 0 0">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; color: #DCE6F7; font-variant-numeric: tabular-nums">STEP 02 <span style="font-size: 12px; font-weight: 700; color: #1A2140; background: #F1B54A; padding: 1px 8px; border-radius: 4px">개발 중</span></p>
+<p class="serif" style="margin: 6px 0 10px; font-size: clamp(23px, 2.3vw, 30px); font-weight: 900; line-height: 1.3; font-family: Pretendard">깊이 생각하기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #E3E9F6">하나의 주제를 여러 방향에서 살펴보고, 다양한 근거와 관점을 비교합니다.</p>
+</div>
+<div class="stair-bar" style="height: 420px; padding: 26px; background: #24234B; color: #FFFFFF; border-radius: 12px 12px 0 0">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; color: #C3C6E0; font-variant-numeric: tabular-nums">STEP 03 <span style="font-size: 12px; font-weight: 700; color: #1A2140; background: #F1B54A; padding: 1px 8px; border-radius: 4px">개발 중</span></p>
+<p class="serif" style="margin: 6px 0 10px; font-size: clamp(23px, 2.3vw, 30px); font-weight: 900; line-height: 1.3; font-family: Pretendard">논리로 쓰기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #E3E5F2">읽은 내용을 바탕으로 자신의 주장을 구성하고, 첨삭을 통해 글을 다듬는 단계입니다.</p>
+</div>
+</div>
+<div style="height: 3px; background: #1A2140"></div>
+<p style="margin: 14px 0 0; font-size: 13px; color: #667085">※ 2·3단계는 개발 중인 과정입니다.</p>
+
+<div style="margin-top: clamp(72px, 9vw, 120px); display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-start">
+<div style="flex: 1 1 280px; min-width: 0">
+<h3 class="serif" style="margin: 0; font-size: clamp(23px, 2.3vw, 30px); line-height: 1.4; font-weight: 800; font-family: Pretendard">하나의 주제를<br>여러 방향에서 읽습니다.</h3>
+<p style="margin: 16px 0 0; color: #3D4560">문해와 사유는 사회·도덕·과학 등 여러 분야를 연결해 하나의 주제를 깊이 탐구합니다.</p>
+</div>
+<dl style="flex: 2 1 520px; min-width: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 14px">
+<div style="padding: 22px 24px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px">
+<dt style="display: inline-block; padding: 2px 10px; border-radius: 4px; background: #DCE6F7; font-size: 14px; font-weight: 800; color: #24234B">공정과 정의</dt>
+<dd class="serif" style="margin: 12px 0 0; font-size: 19px; line-height: 1.55; font-weight: 600; font-family: Bebas Neue, sans-serif">모두에게 똑같이 나누는 것이 언제나 공정할까요?</dd>
+</div>
+<div style="padding: 22px 24px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px">
+<dt style="display: inline-block; padding: 2px 10px; border-radius: 4px; background: #E9F5F0; font-size: 14px; font-weight: 800; color: #1F6B5E">환경과 미래</dt>
+<dd class="serif" style="margin: 12px 0 0; font-size: 19px; line-height: 1.55; font-weight: 600">지금의 편리함과 미래 세대의 권리는 어떻게 조화를 이루어야 할까요?</dd>
+</div>
+<div style="padding: 22px 24px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px">
+<dt style="display: inline-block; padding: 2px 10px; border-radius: 4px; background: #FBEBC8; font-size: 14px; font-weight: 800; color: #6B4A08">기술과 인간</dt>
+<dd class="serif" style="margin: 12px 0 0; font-size: 19px; line-height: 1.55; font-weight: 600; font-family: Pretendard">기술의 발전은 언제나 인간에게 이로울까요?</dd>
+</div>
+<div style="padding: 22px 24px; background: #FFFFFF; border: 1px solid #E5E8ED; border-radius: 12px">
+<dt style="display: inline-block; padding: 2px 10px; border-radius: 4px; background: #E4E3F0; font-size: 14px; font-weight: 800; color: #24234B">공동체와 나</dt>
+<dd class="serif" style="margin: 12px 0 0; font-size: 19px; line-height: 1.55; font-weight: 600">개인의 자유와 공동체의 책임은 어떻게 균형을 이루어야 할까요?</dd>
+</div>
+</dl>
+</div>
+<p class="serif" style="margin: 40px 0 0; font-size: clamp(23px, 2.4vw, 32px); font-weight: 900; text-align: right"><span style="color: #6B7385; font-weight: 600">더 어려운 책보다,</span> <span style="color: #315AA8">더 깊은 사고.</span></p>
+</div>
+</section>
+
+<!-- 10 WRITING & REASONING -->
+<section style="background: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">답을 아는 아이와,<br>답을 <span style="color: #315AA8">설명하는</span> 아이.</h2>
+
+<div style="margin-top: clamp(40px, 5vw, 56px)">
+<p style="margin: 0; color: #3D4560">두 아이에게 같은 질문을 했습니다.</p>
+<p class="serif" style="margin: 10px 0 0; font-size: clamp(23px, 2.3vw, 30px); line-height: 1.45; font-weight: 800; font-family: Pretendard">“주인공의 선택이 옳았다고 생각하나요?”</p>
+</div>
+
+<div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 20px">
+<div style="padding: 28px; border: 1px solid #E5E8ED; border-radius: 12px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 800; color: #667085">첫 번째 답변</p>
+<p class="serif" style="margin: 0; font-size: 21px; line-height: 1.7; font-weight: 600; color: #3D4560; font-family: Bebas Neue, sans-serif">“아니요. 잘못됐다고 생각해요.”</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px" role="img" aria-label="결론만 있음">
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: #EDF2FA; font-size: 14px; font-weight: 700; color: #24234B"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>결론</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; border: 1px dashed #B8BFCC; font-size: 14px; font-weight: 700; color: #6B7385">이유</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; border: 1px dashed #B8BFCC; font-size: 14px; font-weight: 700; color: #6B7385">근거</span>
+</div>
+</div>
+<div style="padding: 28px; background: #24234B; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 800; color: #F1B54A">두 번째 답변</p>
+<p class="serif" style="margin: 0; font-size: 21px; line-height: 2; font-weight: 600; font-family: Pretendard">“<span style="border-bottom: 3px solid #F1B54A">다른 사람에게 피해를 주었기 때문에</span> 잘못됐다고 생각해요. 특히 <span style="border-bottom: 3px solid #9DBCE9">본문의 이 장면에서 그 결과를 확인할 수 있어요</span>.”</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px" role="img" aria-label="결론, 이유, 근거 모두 있음">
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700; color: #24234B"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>결론</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: #F1B54A; font-size: 14px; font-weight: 700; color: #1A2140"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>이유</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: #9DBCE9; font-size: 14px; font-weight: 700; color: #1A2140"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>근거</span>
+</div>
+</div>
+</div>
+<p style="margin: 14px 0 0; font-size: 13px; color: #667085">두 답변은 실제 학생 사례가 아니라 교육적 차이를 보여주는 예시 문장입니다.</p>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: 32px 72px">
+<div style="flex: 1.3 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0">두 아이의 결론은 같습니다.</p>
+<p style="margin: 0; font-weight: 700">하지만 두 번째 아이는 자신의 판단에 이유와 근거를 더했습니다.</p>
+<p style="margin: 0">논·서술형 평가에서 중요한 역량 중 하나는 바로 이러한 설명 능력입니다.</p>
+<p style="margin: 0; font-weight: 600; color: #315AA8">질문을 정확하게 이해하고, 핵심 정보를 선택하고, 근거를 연결하고, 자신의 생각을 논리적으로 표현하는 것.</p>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; padding: 28px; background: #EDF2FA; border-radius: 12px">
+<h3 class="serif" style="margin: 0; font-size: clamp(21px, 2.1vw, 27px); line-height: 1.45; font-weight: 800; font-family: Pretendard">생각을 설명하는 힘은,<br>반복해서 연습해야 자랍니다.</h3>
+<p style="margin: 14px 0 0; color: #3D4560">문해와 사유는 읽기·토론·글쓰기 활동을 통해 그 과정을 경험하도록 돕습니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 11 LOGICAL WRITING -->
+<section style="background: #EDF2FA; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 72px">
+<h2 class="serif" style="flex: 1 1 380px; min-width: 0; margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Bebas Neue, sans-serif">글을 잘 쓰기 전에,<br><span style="color: #315AA8">생각을 정리하는 법</span>부터.</h2>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0">글쓰기가 어려운 이유는 문장력이 부족해서만은 아닙니다.</p>
+<p style="margin: 0">무엇을 주장할지 정하지 못했거나, 어떤 근거를 선택해야 할지 모르거나, 어떤 순서로 설명할지 정리되지 않았을 수 있습니다.</p>
+<p style="margin: 0; font-weight: 700">COSMO의 논리적 글쓰기 과정은 다음 단계를 지향합니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); position: relative">
+<div class="hide-sm" style="position: absolute; left: 28px; right: 28px; top: 27px; height: 3px; background: #9DBCE9" aria-hidden="true"></div>
+<ol style="position: relative; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 24px 20px">
+<li>
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 50%; background: #FFFFFF; border: 3px solid #315AA8; color: #315AA8; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">01</span>
+<p style="margin: 16px 0 6px; font-size: 20px; font-weight: 800">제시문 읽기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">글의 핵심과 논지를 정확하게 이해합니다.</p>
+</li>
+<li>
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 50%; background: #FFFFFF; border: 3px solid #315AA8; color: #315AA8; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">02</span>
+<p style="margin: 16px 0 6px; font-size: 20px; font-weight: 800">핵심 요약</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">중요한 주장과 근거를 정리합니다.</p>
+</li>
+<li>
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 50%; background: #315AA8; border: 3px solid #315AA8; color: #FFFFFF; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">03</span>
+<p style="margin: 16px 0 6px; font-size: 20px; font-weight: 800">관점 비교</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">같은 주제를 바라보는 서로 다른 입장을 살펴봅니다.</p>
+</li>
+<li>
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 50%; background: #24234B; border: 3px solid #24234B; color: #FFFFFF; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">04</span>
+<p style="margin: 16px 0 6px; font-size: 20px; font-weight: 800">내 주장 쓰기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">근거를 바탕으로 자신의 생각을 글로 구성합니다.</p>
+</li>
+<li>
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 50%; background: #F1B54A; border: 3px solid #F1B54A; color: #1A2140; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">05</span>
+<p style="margin: 16px 0 6px; font-size: 20px; font-weight: 800">첨삭과 다시 쓰기</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D4560">피드백을 바탕으로 글을 수정하고 다듬습니다.</p>
+</li>
+</ol>
+</div>
+
+<div style="margin-top: clamp(40px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 12px 40px; align-items: baseline">
+<p class="serif" style="margin: 0; font-size: clamp(21px, 2.1vw, 27px); line-height: 1.5; font-weight: 800">좋은 글은 <span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">생각이 분명하게 드러나는 글</span>입니다.</p>
+<p style="margin: 0; max-width: 600px; color: #3D4560">이러한 논리적 표현 경험은 이후의 서술형 학습과 논증형 글쓰기에도 연결될 수 있습니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 12 COSMO SPECTRUM -->
+<section style="background: #24234B; color: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: 54px; line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">우리 아이는 지금,<br><span style="color: #F1B54A">어디에서</span> 막히고 있을까요?</h2>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px; color: #E3E5F2">
+<p style="margin: 0">같은 학년이라고 모두 같은 수준의 읽기 능력을 가진 것은 아닙니다.</p>
+<p style="margin: 0">어휘는 잘 이해하지만 긴 글의 구조를 파악하는 데 어려움을 겪을 수 있습니다.</p>
+<p style="margin: 0">내용은 이해하지만 자신의 생각을 글로 정리하는 데 더 많은 연습이 필요할 수도 있습니다.</p>
+<p style="margin: 6px 0 0; color: #FFFFFF; font-weight: 800; font-size: 19px">문해와 사유는 COSMO 스펙트럼으로 아이의 학습 출발점을 살펴봅니다.</p>
+<div style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 18px 14px; background: #33346A; border-radius: 12px"><p style="margin: 0; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">50<span style="font-size: 0.45em; margin-left: 2px">분</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">진단 시간</p></div>
+<div style="padding: 18px 14px; background: #33346A; border-radius: 12px"><p style="margin: 0; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">24<span style="font-size: 0.45em; margin-left: 2px">문항</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">부터 논술까지</p></div>
+<div style="padding: 18px 14px; background: #33346A; border-radius: 12px"><p style="margin: 0; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.1; font-weight: 800; font-variant-numeric: tabular-nums">100<span style="font-size: 0.45em; margin-left: 2px">점</span></p><p style="margin: 6px 0 0; font-size: 13px; color: #C3C6E0">총점</p></div>
+</div>
+</div>
+<figure style="flex: 1 1 440px; min-width: 0; margin: 0">
+<svg viewBox="0 0 520 380" style="width: 100%; display: block" role="img" aria-label="진단 영역 6개: 어휘력, 문학 독해, 비문학 독해 사회, 비문학 독해 과학, 논리적 표현력, 논술 구성 능력">
+<polygon points="260,60 372.6,125 372.6,255 260,320 147.4,255 147.4,125" fill="#2E2F5E" stroke="#5B5E92" stroke-width="1.5"></polygon>
+<polygon points="260,103.3 335.1,146.7 335.1,233.3 260,276.7 184.9,233.3 184.9,146.7" fill="none" stroke="#5B5E92" stroke-width="1"></polygon>
+<polygon points="260,146.7 297.5,168.3 297.5,211.7 260,233.3 222.5,211.7 222.5,168.3" fill="none" stroke="#5B5E92" stroke-width="1"></polygon>
+<line x1="260" y1="190" x2="260" y2="60" stroke="#9DBCE9" stroke-width="2"></line>
+<line x1="260" y1="190" x2="372.6" y2="125" stroke="#3FA690" stroke-width="2"></line>
+<line x1="260" y1="190" x2="372.6" y2="255" stroke="#3FA690" stroke-width="2"></line>
+<line x1="260" y1="190" x2="260" y2="320" stroke="#3FA690" stroke-width="2"></line>
+<line x1="260" y1="190" x2="147.4" y2="255" stroke="#F1B54A" stroke-width="2"></line>
+<line x1="260" y1="190" x2="147.4" y2="125" stroke="#F1B54A" stroke-width="2"></line>
+<circle cx="260" cy="60" r="7" fill="#9DBCE9"></circle>
+<circle cx="372.6" cy="125" r="7" fill="#3FA690"></circle>
+<circle cx="372.6" cy="255" r="7" fill="#3FA690"></circle>
+<circle cx="260" cy="320" r="7" fill="#3FA690"></circle>
+<circle cx="147.4" cy="255" r="7" fill="#F1B54A"></circle>
+<circle cx="147.4" cy="125" r="7" fill="#F1B54A"></circle>
+<circle cx="260" cy="190" r="5" fill="#FFFFFF"></circle>
+<g font-family="Pretendard, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">
+<text x="260" y="38" text-anchor="middle">어휘력</text>
+<text x="388" y="122" text-anchor="start">문학 독해</text>
+<text x="388" y="252" text-anchor="start"><tspan x="388" dy="0">비문학 독해</tspan><tspan x="388" dy="20" fill="#C3C6E0">— 사회</tspan></text>
+<text x="260" y="350" text-anchor="middle"><tspan x="260" dy="0">비문학 독해</tspan><tspan x="260" dy="20" fill="#C3C6E0">— 과학</tspan></text>
+<text x="132" y="260" text-anchor="end">논리적 표현력</text>
+<text x="132" y="122" text-anchor="end">논술 구성 능력</text>
+</g>
+</svg>
+<figcaption style="margin-top: 8px; font-size: 13px; color: #C3C6E0; text-align: center">진단 영역 구성 (점수 예시가 아닌 영역 구조도)</figcaption>
+</figure>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); padding: 28px clamp(20px, 3vw, 36px); background: #FFFFFF; color: #1A2140; border-radius: 12px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px 48px">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0; color: #3D4560">진단 결과를 바탕으로 학부모 상담을 진행하고, 아이에게 적합한 수업을 안내합니다.</p>
+<p class="serif" style="margin: 10px 0 0; font-size: clamp(19px, 1.8vw, 22px); line-height: 1.55; font-weight: 800; font-family: Bebas Neue, sans-serif">중요한 것은 점수 하나가 아니라, 아이가 무엇을 잘하고 어디서부터 더 배워야 하는지 이해하는 것입니다.</p>
+</div>
+<a href="#apply" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 8px; background: #315AA8; color: #FFFFFF; font-size: 16px; font-weight: 800; text-decoration: none; white-space: nowrap">무료 진단 신청하기
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- 13 LEVEL-BASED EDUCATION -->
+<section style="background: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 72px; align-items: flex-end">
+<h2 class="serif" style="flex: 1 1 400px; min-width: 0; margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">같은 학년이라도,<br><span style="color: #315AA8">필요한 수업은</span> 다릅니다.</h2>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; font-weight: 600">문해와 사유는 COSMO 스펙트럼 진단을 바탕으로 학년별 독해반과 논리반을 구성합니다.</p>
+</div>
+
+<div style="margin-top: clamp(40px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch">
+<div style="flex: 0 1 220px; min-width: 0; padding: 24px; background: #24234B; color: #FFFFFF; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; gap: 10px">
+<p style="margin: 0; font-size: 20px; font-weight: 800; line-height: 1.4">COSMO 스펙트럼 진단</p>
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F1B54A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</div>
+<div style="flex: 1 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px">
+<div style="padding: 24px; background: #EDF2FA; border-radius: 12px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; font-weight: 800; color: #FFFFFF; background: #315AA8; padding: 2px 10px; border-radius: 4px">5학년</span><span style="font-size: 20px; font-weight: 800">독해반</span></p>
+<p style="margin: 12px 0 0; color: #3D4560">5학년 독해반 — 함께 읽으며 책을 정확하게 이해합니다.</p>
+</div>
+<div style="padding: 24px; background: #E4E3F0; border-radius: 12px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; font-weight: 800; color: #FFFFFF; background: #315AA8; padding: 2px 10px; border-radius: 4px">5학년</span><span style="font-size: 20px; font-weight: 800">논리반</span></p>
+<p style="margin: 12px 0 0; color: #3D4560">5학년 논리반 — 읽은 내용을 바탕으로 생각을 넓힙니다.</p>
+</div>
+<div style="padding: 24px; background: #EDF2FA; border-radius: 12px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; font-weight: 800; color: #FFFFFF; background: #24234B; padding: 2px 10px; border-radius: 4px">6학년</span><span style="font-size: 20px; font-weight: 800">독해반</span></p>
+<p style="margin: 12px 0 0; color: #3D4560">6학년 독해반 — 함께 읽으며 책을 정확하게 이해합니다.</p>
+</div>
+<div style="padding: 24px; background: #E4E3F0; border-radius: 12px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="font-size: 14px; font-weight: 800; color: #FFFFFF; background: #24234B; padding: 2px 10px; border-radius: 4px">6학년</span><span style="font-size: 20px; font-weight: 800">논리반</span></p>
+<p style="margin: 12px 0 0; color: #3D4560">6학년 논리반 — 읽은 내용을 바탕으로 생각을 넓힙니다.</p>
+</div>
+</div>
+</div>
+
+<div style="margin-top: clamp(40px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 20px 72px">
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; color: #3D4560">아이가 잘하는 영역은 더 발전시키고, 아직 어려워하는 영역은 차근차근 보완할 수 있도록 돕습니다.</p>
+<p class="serif" style="flex: 1 1 420px; min-width: 0; margin: 0; font-size: clamp(20px, 1.9vw, 24px); line-height: 1.55; font-weight: 800; font-family: Pretendard">같은 책을 읽더라도, <span style="background: linear-gradient(transparent 60%, #F9DFA6 60%)">아이에게 필요한 질문의 깊이는 다를 수 있습니다.</span></p>
+</div>
+</div>
+</section>
+
+<!-- HOMEPAGE BAND -->
+
+
+<!-- 14 OUR VISION -->
+<section style="background: #315AA8; color: #FFFFFF; padding: clamp(44px, 5vw, 64px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px 40px">
+<div style="display: flex; align-items: center; gap: 20px; min-width: 0">
+<img src="/_blob/45403b61875fd11c819e0bd28c0d1157" alt="" style="width: 76px; height: auto; display: block; flex: 0 0 auto">
+<p class="serif" style="margin: 0; font-size: clamp(20px, 2vw, 26px); line-height: 1.45; font-weight: 800; font-family: Pretendard">문해와 사유의 교육을 홈페이지에서 더 자세히 만나보세요.</p>
+</div>
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="btn-ghost-light" style="display: inline-flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 24px; border-radius: 8px; border: 1.5px solid #FFFFFF; color: #FFFFFF; font-size: 17px; font-weight: 800; text-decoration: none; white-space: nowrap">munsayu.com 바로가기
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+</section><section style="background: #F1B54A; color: #1A2140; padding: clamp(80px, 10vw, 144px) clamp(20px, 4vw, 56px); overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto">
+<h2 class="serif" style="margin: 0; font-size: clamp(36px, 4.8vw, 66px); line-height: 1.18; font-weight: 900; letter-spacing: -0.03em; font-family: Bebas Neue, sans-serif">중심이 탄탄한 아이가<br>멀리 읽습니다.</h2>
+<p style="margin: 28px 0 0; font-size: 19px; font-weight: 600">문해와 사유가 지향하는 아이의 모습은 분명합니다.</p>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+<div style="padding: 30px 28px; background: #FFFFFF; border-radius: 12px">
+<p class="serif" style="margin: 0; font-size: 52px; line-height: 1; font-weight: 900; color: #315AA8">1</p>
+<p class="serif" style="margin: 18px 0 10px; font-size: clamp(21px, 2vw, 26px); line-height: 1.4; font-weight: 800; font-family: Pretendard">낯선 단어 앞에서 멈추지 않는 아이</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3D4560">처음 보는 낱말도 문맥을 통해 이해하고, 새로운 글을 읽는 기반을 갖춥니다.</p>
+</div>
+<div style="padding: 30px 28px; background: #FFFFFF; border-radius: 12px">
+<p class="serif" style="margin: 0; font-size: 52px; line-height: 1; font-weight: 900; color: #1F6B5E">2</p>
+<p class="serif" style="margin: 18px 0 10px; font-size: clamp(21px, 2vw, 26px); line-height: 1.4; font-weight: 800; font-family: Pretendard">긴 글을 읽고 핵심을 말하는 아이</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3D4560">책 한 권, 제시문 여러 편을 읽고 중요한 내용을 자신의 언어로 설명합니다.</p>
+</div>
+<div style="padding: 30px 28px; background: #24234B; color: #FFFFFF; border-radius: 12px">
+<p class="serif" style="margin: 0; font-size: 52px; line-height: 1; font-weight: 900; color: #F1B54A">3</p>
+<p class="serif" style="margin: 18px 0 10px; font-size: clamp(21px, 2vw, 26px); line-height: 1.4; font-weight: 800; font-family: Bebas Neue, sans-serif">근거를 들어 자기 생각을 쓰는 아이</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #E3E5F2">다른 생각과 견주어 보고, 자신의 주장을 논리적인 글로 발전시킵니다.</p>
+</div>
+</div>
+
+<div style="margin-top: clamp(48px, 6vw, 72px); max-width: 760px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0">우리는 아이가 단순히 더 많은 정답을 아는 데서 그치지 않기를 바랍니다.</p>
+<p class="serif" style="margin: 0; font-size: clamp(21px, 2.1vw, 27px); line-height: 1.5; font-weight: 900; font-family: Pretendard">스스로 읽고, 스스로 판단하고, 자신의 생각을 설명할 수 있는 아이.</p>
+<p style="margin: 0">그 성장을 위해 문해와 사유는 어휘에서 독서, 사고와 표현까지 연결합니다.</p>
+</div>
+</div>
+</section>
+
+<!-- 15 INFORMATION SESSION -->
+<section style="background: #FCFBF8; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto; background: #FFFFFF; border: 2px solid #24234B; border-radius: 16px; padding: clamp(28px, 5vw, 72px)">
+<div style="display: flex; flex-wrap: wrap; gap: 48px 72px">
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0 0 18px; display: inline-block; padding: 4px 12px; border-radius: 4px; background: #315AA8; color: #FFFFFF; font-size: 14px; font-weight: 800">문해와 사유 학부모 교육 설명회</p>
+<h2 class="serif" style="margin: 0; font-size: clamp(28px, 3.2vw, 44px); line-height: 1.32; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">달라지는 교육,<br><span style="color: #315AA8">우리 아이는 무엇을</span><br>준비해야 할까요?</h2>
+<div style="margin-top: 28px; display: flex; flex-direction: column; gap: 4px; font-weight: 700">
+<p style="margin: 0">고교학점제와 대입제도 개편.</p>
+<p style="margin: 0">논·서술형 평가의 중요성.</p>
+<p style="margin: 0">그리고 초등 시기에 길러야 할 읽기·사고·표현의 힘.</p>
+</div>
+<div style="margin-top: 22px; display: flex; flex-direction: column; gap: 12px; color: #3D4560">
+<p style="margin: 0">교육환경의 변화를 막연히 걱정하기보다, 우리 아이에게 어떤 교육이 필요한지 구체적으로 이해하는 시간이 필요합니다.</p>
+<p style="margin: 0">이번 설명회에서는 문해와 사유의 COSMO 교육과정과 실제 교재를 바탕으로 초등 문해력 교육의 방향을 소개합니다.</p>
+</div>
+</div>
+<ol style="flex: 1.1 1 440px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 18px; padding: 20px 22px; background: #EDF2FA; border-radius: 12px">
+<span class="serif" style="flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; background: #315AA8; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">01</span>
+<div><p style="margin: 0; font-weight: 800; font-size: 18px; line-height: 1.5">달라지는 교육환경과 초등 문해력</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65; color: #3D4560">고교학점제와 논·서술형 평가를 이해하고, 중·고등 학습의 기초가 되는 역량을 살펴봅니다.</p></div>
+</li>
+<li style="display: flex; gap: 18px; padding: 20px 22px; background: #EDF2FA; border-radius: 12px">
+<span class="serif" style="flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; background: #315AA8; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">02</span>
+<div><p style="margin: 0; font-weight: 800; font-size: 18px; line-height: 1.5">교과서 어휘에서 시작하는 COSMO 프로젝트</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65; color: #3D4560">1,000개 핵심 어휘와 50단원 CORE 교재가 어떻게 구성되었는지 소개합니다.</p></div>
+</li>
+<li style="display: flex; gap: 18px; padding: 20px 22px; background: #E9F5F0; border-radius: 12px">
+<span class="serif" style="flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; background: #1F6B5E; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">03</span>
+<div><p style="margin: 0; font-weight: 800; font-size: 18px; line-height: 1.5">책 한 권을 깊이 읽는 FLARE 독서교육</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65; color: #3D4560">읽기·질문·토론을 연결하는 수업방식과 실제 교재를 확인합니다.</p></div>
+</li>
+<li style="display: flex; gap: 18px; padding: 20px 22px; background: #FBEBC8; border-radius: 12px">
+<span class="serif" style="flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; background: #24234B; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800">04</span>
+<div><p style="margin: 0; font-weight: 800; font-size: 18px; line-height: 1.5">우리 아이의 현재를 살펴보는 COSMO 스펙트럼</p><p style="margin: 6px 0 0; font-size: 16px; line-height: 1.65; color: #3D4560">진단 영역과 결과 상담, 학년별 독해반·논리반의 수업 구성을 안내합니다.</p></div>
+</li>
+</ol>
+</div>
+<div style="margin-top: clamp(40px, 5vw, 64px); padding-top: 32px; border-top: 1px solid #E5E8ED; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px 48px">
+<div style="flex: 1 1 420px; min-width: 0">
+<h3 style="margin: 0; font-size: clamp(17px, 1.5vw, 19px); line-height: 1.5; font-weight: 700; color: #3D4560">교육의 필요성만 이야기하지 않겠습니다.</h3>
+<p class="serif" style="margin: 8px 0 0; font-size: clamp(23px, 2.4vw, 32px); line-height: 1.4; font-weight: 900; font-family: Bebas Neue, sans-serif">무엇을, 왜, 어떻게 가르치는지 <span style="color: #315AA8">보여드리겠습니다.</span></p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform" target="_blank" rel="noopener" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 60px; padding: 0 28px; border-radius: 8px; background: #315AA8; color: #FFFFFF; font-size: 18px; font-weight: 800; text-decoration: none">교육 설명회 연계 무료 진단 신청
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 8px; min-height: 60px; padding: 0 22px; border-radius: 8px; border: 1.5px solid #24234B; color: #24234B; font-size: 16px; font-weight: 700; text-decoration: none">홈페이지 둘러보기
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 16 FINAL CTA / FORM -->
+<section id="apply" style="background: #24234B; color: #FFFFFF; padding: clamp(72px, 9vw, 136px) clamp(20px, 4vw, 56px)">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px 72px; align-items: flex-start">
+<div style="flex: 1 1 400px; min-width: 0">
+<h2 class="serif" style="margin: 0; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.3; font-weight: 900; letter-spacing: -0.02em; font-family: Pretendard">앞으로의 공부를 위해,<br><span style="color: #F1B54A">지금 필요한 힘부터.</span></h2>
+<div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px; color: #E3E5F2">
+<p style="margin: 0">아이들이 앞으로 배우게 될 내용은 계속 달라질 것입니다.</p>
+<p style="margin: 0">교육제도도, 평가방식도 변할 수 있습니다.</p>
+<p style="margin: 0">하지만 새로운 개념을 이해하고, 복잡한 글을 읽고, 근거를 바탕으로 판단하며, 자신의 생각을 표현하는 힘은 여전히 중요합니다.</p>
+<p style="margin: 0">문해와 사유는 초등 시기에 그 기반을 다집니다.</p>
+<p style="margin: 6px 0 0; color: #FFFFFF; font-weight: 800">정확하게 읽는 아이. 깊이 생각하는 아이. 논리적으로 표현하는 아이.</p>
+</div>
+<h3 class="serif" style="margin: 36px 0 0; font-size: clamp(23px, 2.3vw, 30px); line-height: 1.4; font-weight: 900; font-family: Pretendard">지금 읽는 힘이,<br>앞으로 배우는 힘이 됩니다.</h3>
+<p style="margin: 12px 0 0; color: #E3E5F2">문해와 사유 학부모 교육 설명회에서 그 교육의 방향과 방법을 확인해 보세요.</p>
+<dl style="margin: 36px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 10px">
+<div style="padding: 16px 18px; background: #33346A; border-radius: 12px"><dt style="font-size: 13px; color: #C3C6E0">대상</dt><dd style="margin: 4px 0 0; font-weight: 800">초등 5~6학년 학부모</dd></div>
+<div style="padding: 16px 18px; background: #33346A; border-radius: 12px"><dt style="font-size: 13px; color: #C3C6E0">지역</dt><dd style="margin: 4px 0 0; font-weight: 800">대치본원 · 분당 수내점</dd></div>
+<div style="padding: 16px 18px; background: #33346A; border-radius: 12px"><dt style="font-size: 13px; color: #C3C6E0">설명회 일정</dt><dd style="margin: 4px 0 0; font-weight: 800">신청자 대상 별도 안내</dd></div>
+</dl>
+<a href="https://munsayu.com" target="_blank" rel="noopener" style="margin-top: 24px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: underline; text-underline-offset: 6px; text-decoration-color: #F1B54A; text-decoration-thickness: 2px">신청 전 홈페이지에서 학원 정보 먼저 보기
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+
+<div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; color: #1A2140; border-radius: 16px; padding: clamp(24px, 3.5vw, 44px); border-top: 6px solid #F1B54A">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 22px; font-weight: 800; line-height: 1.4">교육 설명회 연계 무료 진단 신청</p>
+<p style="margin: 0; color: #3D4560">아래 버튼을 누르면 신청서가 새 창으로 열립니다.</p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform" target="_blank" rel="noopener" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 76px; padding: 0 24px; border-radius: 10px; background: #315AA8; color: #FFFFFF; font-size: 20px; font-weight: 800; text-decoration: none; text-align: center">신청서 작성하기
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3D4560">설명회 일정과 무료 진단 안내는 확인 후 연락드리겠습니다.<br><span style="color: #667085">(접수는 참석 확정이 아닙니다.)</span></p>
+<div style="padding-top: 18px; border-top: 1px solid #E5E8ED; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #3D4560">전화로도 신청·문의하실 수 있습니다</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 10px">
+<a href="tel:025635972" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; border-radius: 8px; background: #F6F8FC; color: #1A2140; text-decoration: none"><span style="font-size: 14px; font-weight: 700">대치본원</span><span style="font-size: 16px; font-weight: 800; color: #315AA8; font-variant-numeric: tabular-nums">02-563-5972</span></a>
+<a href="tel:0317135972" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; border-radius: 8px; background: #F6F8FC; color: #1A2140; text-decoration: none"><span style="font-size: 14px; font-weight: 700">분당 수내점</span><span style="font-size: 16px; font-weight: 800; color: #315AA8; font-variant-numeric: tabular-nums">031-713-5972</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #1A2140; color: #C9CDDA; padding: clamp(56px, 7vw, 88px) clamp(20px, 4vw, 56px) 40px; font-size: 15px; line-height: 1.7">
+<div style="max-width: 1200px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px 72px">
+<div style="flex: 1 1 240px; min-width: 0">
+<img src="/_blob/45403b61875fd11c819e0bd28c0d1157" alt="문해와 사유 — 읽고, 생각하고, 표현하다" style="width: 200px; height: auto; display: block">
+<p class="serif" style="margin: 24px 0 0; color: #E3E5F2">읽다 — 쓰다 — 말하다.</p>
+<a href="https://munsayu.com" target="_blank" rel="noopener" class="btn-ghost-light" style="margin-top: 20px; display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 8px; border: 1.5px solid rgba(255,255,255,0.6); color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none">홈페이지 바로가기
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 28px 40px">
+<div>
+<p style="margin: 0 0 6px; font-weight: 700; color: #FFFFFF">대치본원</p>
+<p style="margin: 0">서울특별시 강남구 도곡로 515, 2층</p>
+<p style="margin: 0"><a href="tel:025635972" style="color: #E3E5F2; font-variant-numeric: tabular-nums">02-563-5972</a></p>
+</div>
+<div>
+<p style="margin: 0 0 6px; font-weight: 700; color: #FFFFFF">분당 수내점</p>
+<p style="margin: 0">경기도 성남시 분당구 내정로173번길 1, 5층</p>
+<p style="margin: 0"><a href="tel:0317135972" style="color: #E3E5F2; font-variant-numeric: tabular-nums">031-713-5972</a></p>
+</div>
+<div>
+<p style="margin: 0 0 6px; font-weight: 700; color: #FFFFFF">홈페이지</p>
+<p style="margin: 0"><a href="https://munsayu.com" target="_blank" rel="noopener" style="color: #E3E5F2">munsayu.com</a></p>
+</div>
+</div>
+</div>
+<div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #343B5C; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; font-size: 13px; color: #A9AEC2">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 6px; font-weight: 600; color: #C9CDDA">정책 출처</p>
+<p style="margin: 0"><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=103113&amp;lev=0&amp;m=020402&amp;opType=N&amp;page=1" target="_blank" rel="noopener" style="color: #C9CDDA; text-underline-offset: 3px">교육부 고교학점제 안내</a> · <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=97551&amp;lev=0" target="_blank" rel="noopener" style="color: #C9CDDA; text-underline-offset: 3px">교육부 2028 대학입시제도 개편안</a> · <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=96578&amp;lev=0&amp;m=020402" target="_blank" rel="noopener" style="color: #C9CDDA; text-underline-offset: 3px">교육부 논·서술형 평가 관련 공식 자료</a></p>
+</div>
+<p style="margin: 0"><a href="#" style="color: #C9CDDA">개인정보처리방침</a></p>
+</div>
+</div>
+</footer>
+
+</div>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&amp;display=swap"></helmet></x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"heroVariant":{"editor":"enum","options":["A","B"],"default":"A","section":"A/B 테스트"},"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const variant = this.props.heroVariant ?? 'A';
+    return { isA: variant !== 'B', isB: variant === 'B' };
+  }
+}
+</script>
+</body>
+</html>
