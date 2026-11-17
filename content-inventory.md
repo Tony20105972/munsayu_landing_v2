@@ -49,7 +49,7 @@ CORE 어휘
 ```
 
 링크:
-- `교육 설명회 연계 무료 진단 신청` → `https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform` (target=_blank)
+- `교육 설명회 연계 무료 진단 신청` → `https://forms.gle/hB9ViXT51HkRUkjU7` (target=_blank)
 - `문해와 사유 홈페이지` → `https://munsayu.com` (target=_blank)
 
 ## [02] SECTION 02
@@ -722,7 +722,7 @@ munsayu.com 바로가기
 ```
 
 링크:
-- `교육 설명회 연계 무료 진단 신청` → `https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform` (target=_blank)
+- `교육 설명회 연계 무료 진단 신청` → `https://forms.gle/hB9ViXT51HkRUkjU7` (target=_blank)
 - `홈페이지 둘러보기` → `https://munsayu.com` (target=_blank)
 
 ## [18] SECTION 18 #apply — 앞으로의 공부를 위해, 지금 필요한 힘부터.
@@ -773,7 +773,7 @@ munsayu.com 바로가기
 
 링크:
 - `신청 전 홈페이지에서 학원 정보 먼저 보기` → `https://munsayu.com` (target=_blank)
-- `신청서 작성하기` → `https://docs.google.com/forms/d/e/1FAIpQLSduZtRfRDOTbPw3v-12xcdvFL7J6MiHeekq1jbmFd6ltzYDLQ/viewform` (target=_blank)
+- `신청서 작성하기` → `https://forms.gle/hB9ViXT51HkRUkjU7` (target=_blank)
 - `대치본원 02-563-5972` → `tel:025635972`
 - `분당 수내점 031-713-5972` → `tel:0317135972`
 
